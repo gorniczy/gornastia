@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+      <link href="css/css_stylesheet.css" type="text/css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="css/animate.css" type="text/css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="jquery.sticky.js"></script>
+
+<!-- My script -->
+      <script>
+
+        $(document).ready(function() {
+
+// Makes social media icons hidden
+
+          $("#facebook, #linked, #instagram, #github").css("visibility", "hidden");
+
+// Changes logo icon and calls in social media icons with animation
+
+          $(".logo-1").mouseenter(function() {
+            $(this).css("display", "none");
+            $(".logo-2").css("display", "inline-block");
+            $("#facebook").css("visibility", "visible").css("-webkit-animation-duration", "0.1s").addClass("animated fadeInDown").one("animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd",
+            function() {
+              $("#linked").css("visibility", "visible").css("-webkit-animation-duration", "0.1s").addClass("animated fadeInDown").one("animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd",
+              function() {
+                $("#instagram").css("visibility", "visible").css("-webkit-animation-duration", "0.1s").addClass("animated fadeInDown").one("animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd",
+                function() {
+                  $("#github").css("visibility", "visible").css("-webkit-animation-duration", "0.1s").addClass("animated fadeInDown").one("animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd",
+                  function() {
+                    $("#facebook, #linked, #instagram, #github").removeClass("animated fadeInDown")
+                  });
+                        });
+                      });
+                    });
+                  });
+
+// Brings back the first logo icon and removes social media icons with animation
+
+            $(".logo-social").mouseleave(function() {
+            $("#github").addClass("animated fadeOutUp").one("animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd",
+              function() {
+                $("#instagram").addClass("animated fadeOutUp").one("animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd",
+                  function() {
+                    $("#linked").addClass("animated fadeOutUp").one("animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd",
+                      function() {
+                        $("#facebook").addClass("animated fadeOutUp").one("animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd",
+                          function() {
+                            $("#facebook, #linked, #instagram, #github").removeClass("animated fadeOutUp").css("visibility", "hidden");
+                            $(".logo-2").css("display", "none");
+                            $(".logo-1").css("display", "inline-block");
+                          });
+                      });
+                    });
+                });
+              });
+
+            $("#sticker").sticky({topSpacing: 0});
+
+          });
+      </script>
+  </head>
+
+<!-- Body of a page -->
+
+  <body>
+
+<!-- Main container -->
+    <div class="container-fluid portfolio">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+
+<!-- Home -->
+          <div id="home">
+            <div class="logo-social">
+              <div class="dg">
+                <img src="img/logo-1.png" class="logo-1" alt="logo">
+                <img src="img/logo-2.png" class="logo-2" alt="logo">
+              </div>
+              <div class="wrapper">
+              <div class="media-links-1">
+                <a href="https://www.facebook.com/gorniczy" target="_blank"><img src="img/facebook-logo-dark.png" id="facebook" alt="Facebook logo"></a>
+                <a href="https://www.linkedin.com/in/denis-gornichar-56b3b564/" target="_blank"><img src="img/linkedin-sign-dark.png" id="linked" alt="LinkedIn logo"></a>
+                <a href="https://www.instagram.com/gorniczy/" target="_blank"><img src="img/instagram-symbol-dark.png" id="instagram" alt="Instagram logo"></a>
+                <a href="https://github.com/gorniczy" target="_blank"><img src="img/github-sign-dark.png" id="github" alt="Github logo"></a>
+              </div>
+            </div>
+            </div>
+            <div class="me">
+                <h1 class="heading">NASTIA<br/>GORNICHAR</h1>
+                <h6 class="my-role">Artist/Designer</h6>
+            </div>
+            <div id="go-to-2">
+            </div>
+          </div>
+
+<!-- Navigation bar -->
+          <div id="sticker" class="text-center navbar-pf">
+            <a class="nav-itm" href="">Home</a>
+            <a class="nav-itm" href="#go-to-2">Graphic</a>
+            <a class="nav-itm" href="#go-to-3">Web</a>
+            <a class="nav-itm" href="#go-to-4">Academic</a>
+            <a class="nav-itm" href="#go-to-5">Contact</a>
+            <a id="hire" type="button" class="btn" href="mailto:denysgornichar@gmail.com">HIRE ME</a>
+          </div>
+
+<!-- Graphic works -->
+          <div id="graphic-works">
+            <h3 class="subheading-1">Graphic works</h3>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+
+<!-- Oslo -->
+                <div class="row">
+                  <div class="col-xs-4">
+                    <img src="img/oslo-1.jpg" class="img-responsive gallery" alt="Oslo composition">
+                    <p class="photo-caption">Oslo I</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <img src="img/oslo-2.jpg" class="img-responsive gallery" alt="Oslo composition">
+                    <p class="photo-caption">Oslo II</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <img src="img/oslo-3.jpg" class="img-responsive gallery" alt="Oslo composition">
+                    <p class="photo-caption">Oslo III</p>
+                  </div>
+                </div>
+
+<!-- Artwork -->
+                <div class="row">
+                  <div class="col-xs-4">
+                    <img src="img/artwork-1.jpg" class="img-responsive gallery" alt="Artwork">
+                    <p class="photo-caption">Broken waves</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <img src="img/artwork-2.jpg" class="img-responsive gallery" alt="Artwork">
+                    <p class="photo-caption">Twins</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <img src="img/artwork-3.jpg" class="img-responsive gallery" alt="Artwork">
+                    <p class="photo-caption">Visitors</p>
+                  </div>
+                </div>
+
+<!-- Omulew -->
+                <div class="row">
+                  <div class="col-xs-4">
+                    <img src="img/omulew-1.jpg" class="img-responsive gallery" alt="Omulew dawn">
+                    <p class="photo-caption">Daybirth I</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <img src="img/omulew-2.jpg" class="img-responsive gallery" alt="Omulew dawn">
+                    <p class="photo-caption">Daybirth II</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <img src="img/omulew-3.jpg" class="img-responsive gallery" alt="Omulew dawn">
+                    <p class="photo-caption">Daybirth III</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="go-to-3">
+            </div>
+          </div>
+
+<!-- Web design/dev -->
+          <div id="web-design">
+            <h3 class="subheading-2">Web design/dev</h3>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <a href="https://gorniczy.github.io" target="_blank"><img src="img/portfolio.png" class="img-responsive portfolio-img" alt="Screen capture of the webpage"></a>
+                  </div>
+                  <div class="col-xs-6">
+                    <a href="https://gorniczy.github.io/presented/" target="_blank"><img src="img/Slinkieta.png" class="img-responsive slinkieta-img" alt="Screen capture of the webpage"></a>
+                  </div>
+                  <div class="col-xs-6">
+                  </div>
+                  <div class="col-xs-6">
+                    <a href="https://gorniczy.github.io/the-meaning-of-meaning/" target="_blank"><img src="img/tribute.png" class="img-responsive tribute-img" alt="Screen capture of the webpage"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="go-to-4">
+            </div>
+          </div>
+
+<!-- Academic work -->
+          <div id="academic">
+            <h3 class="subheading-3">Academic work</h3>
+            <div class="row">
+              <div class="col-xs-8 col-xs-offset-2">
+                <div class="row">
+                  <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+                    <a href="https://drive.google.com/file/d/1eOOPMfb8aQpcpGhSDzCMFv-9G17F7ukn/view?usp=sharing" target="_blank"><img src="img/notebook-1.png" class="img-responsive dissertation_icon" alt="Book icon"></a>
+                    <p class="book-caption">Download <strong>pdf</strong> file (PL)</p>
+                  </div>
+                  <div class="col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                    <h6 class="emphasis dissertation">Constructing Ukraine in the American and Russian press discourses</h6>
+                    <p>The dissertation is dedicated to the analysis of the ways of constructing Ukraine in the American and Russian press discourses during the revolution named Euromaidan and in the months that followed. The aim of the analysis is to question the meaning-making practices related to Ukraine, liberate its image and enable its reconstruction through emancipation of Ukrainians themselves. The source database consists of the articles published in the two major newspapers — Moskovskij Komsomolets (Russia) and The New York Times (USA). The scope of the analysis includes cultural contexts, Ukraine as a whole as well as its regions and residents.
+                    </p>
+                    <p class="dissertation">A smaller-scale study of Ukrainian crisis is presented in <a href="http://www.kulturaihistoria.umcs.lublin.pl/archives/5193" class="article" target="_blank"> my article</a> published by the academic journal <strong>Kultura i historia</strong> (PL).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="go-to-5">
+            </div>
+          </div>
+
+<!-- Contact -->
+          <div id="contact">
+            <h3 class="subheading-4">Get in touch</h3>
+            <div class="name-phone-mail">
+              <p class="name">Denis Gornichar</p>
+              <p class="phone">+48 503 687 787</p>
+              <a href="mailto:denysgornichar@gmail.com"><p class="mail">denysgornichar@gmail.com</p></a>
+            </div>
+            <div class="languages">
+              <p class="text-center">I am a fluent speaker of <span>English</span>, <span>Polish</span>, <span>Russian</span> and <span>Ukrainian</span> languages.<br/> Feel free to contact me in any or all of them.</p>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                <div class="row">
+                  <div class="col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3 media-links-2">
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <a href="https://www.facebook.com/gorniczy" target="_blank"><img src="img/facebook-logo.png" class="links" alt="Facebook logo"></a>
+                      </div>
+                      <div class="col-xs-3">
+                        <a href="https://www.linkedin.com/in/denis-gornichar-56b3b564/" target="_blank"><img src="img/linkedin-sign.png" class="links" alt="LinkedIn logo"></a>
+                      </div>
+                      <div class="col-xs-3">
+                        <a href="https://www.instagram.com/gorniczy/" target="_blank"><img src="img/instagram-symbol.png" class="links" alt="Instagram logo"></a>
+                      </div>
+                      <div class="col-xs-3">
+                        <a href="https://github.com/gorniczy" target="_blank"><img src="img/github-sign.png" class="links" alt="Github logo"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Footer -->
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 footer">
+          <hr>
+          <p class="text-center">Designed and coded with passion by <a href="https://github.com/gorniczy">gorniczy</a> (Denis Gornichar).</p>
+          <div class="text-center"><p>The book icon made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></p></div>
+          <div class="text-center"><p>Social media icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></p></div><br/>
+        </div>
+      </div>
+  </body>
+</html>
