@@ -18,6 +18,11 @@
   background-size: cover;
 }
 
+#sticker {
+  position: sticky;
+  top: 10px;
+}
+
 #graphic-works {
   background-color: #fafafa;
   margin-top: 0px;
@@ -165,15 +170,19 @@ p span {
 /* Navigation bar */
 
 .navbar-pf {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #1a1a1a;
+  z-index: 1000000;
 }
 
 .nav-itm {
   float: left;
-  display: block;
+  display: inline;
   color: #e1e1e1;
   text-decoration: none;
   width: 150px;
@@ -188,7 +197,7 @@ p span {
 
 #hire {
   float: right;
-  display: block;
+  display: inline;
   width: 100px;
   padding: 4px 0px;
   margin: 8px 10px;
