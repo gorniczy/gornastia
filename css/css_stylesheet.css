@@ -176,22 +176,22 @@ p span {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #1a1a1a;
+  background-color: #462633;
   z-index: 1000000;
 }
 
 .nav-itm {
   float: left;
   display: inline;
-  color: #e1e1e1;
+  color: #FFFFFF;
   text-decoration: none;
   width: 150px;
   padding: 14px 0px;
 }
 
 .nav-itm:hover {
-  background-color: #e1e1e1;
-  color: #1a1a1a;
+  background-color: #F8C671;
+  color: #462633;
   text-decoration: none;
 }
 
@@ -203,8 +203,8 @@ p span {
   margin: 8px 10px;
   text-decoration: none;
   font-size: 16px;
-  background-color: #c24f2b;
-  color: #e1e1e1;
+  background-color: #91224D;
+  color: #FFFFFF;
 }
 
 
