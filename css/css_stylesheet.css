@@ -1,401 +1,49 @@
-.portfolio {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  min-width: 500px
-}
-
 /* {
   outline: 1px solid red;
+}*/
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url('../fonts/Lato-Bold.ttf');
 }
 
-/* Page sections */
+@font-face {
+  font-family: Lato-Regular;
+  src: url('../fonts/Lato-Regular.ttf');
+}
 
-#home {
-  background-image: url("../img/img-background-1(b).png");
-  height: 100%;
-  background-position: center;
+#content {
+  position: absolute;
+  max-width: 1366px;
+  width: 100vw;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+#intro {
+  background-image: url("../img/intro_background.png");
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#graphic-works {
-  background-color: #fafafa;
-  margin-top: 0px;
-  padding-bottom: 40px;
-}
-
-#web-design {
-  background-color: #1a1a1a;
-  padding-bottom: 50px;
-}
-
-#academic {
-  background-color: #fafafa;
-  padding-bottom: 50px;
-}
-
-#contact {
-  background-color: #462633;
-  padding-bottom: 40px;
-}
-
-/* text styling */
-
-* {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.me {
-  padding: 21% 0% 20% 15%;
-}
-
-.heading {
-  font-family: 'Abril Fatface';
-  font-size: 50px;
-  color: #c24f2b;
-}
-
-.my-role, .emphasis {
-  font-family: 'Abril Fatface';
-  font-size: 16px;
-  color: #1a1a1a;
-}
-
-.subheading-1 {
-  font-family: 'Abril Fatface';
-  font-size: 30px;
-  color: #1a1a1a;
-  margin: 0 35% 50px 35%;
-  padding: 40px 0 5px 0;
-  text-align: center;
-  border-bottom: 1px solid #cccccc;
-}
-
-.subheading-2 {
-  font-family: 'Abril Fatface';
-  font-size: 30px;
-  color: #e1e1e1;
-  margin: 0 35% 55px 35%;
-  padding: 40px 0 5px 0;
-  text-align: center;
-  border-bottom: 1px solid #333333;
-}
-
-.subheading-3 {
-  font-family: 'Abril Fatface';
-  font-size: 30px;
-  color: #1a1a1a;
-  margin: 0 35% 50px 35%;
-  padding: 40px 0 5px 0;
-  text-align: center;
-  border-bottom: 1px solid #cccccc;
-}
-
-.subheading-4 {
-  font-family: 'Abril Fatface';
-  font-size: 30px;
-  color: #e1e1e1;
-  margin: 0 35% 20px 35%;
-  padding: 35px 0 5px 0;
-  text-align: center;
-  border-bottom: 1px solid #333333;
-}
-
-.photo-caption {
-  padding: 15px 0;
-  color: #1a1a1a;
-  background-color: white;
-  text-align: center;
-}
-
-.book-caption {
-  text-align: center;
-}
-
-.emphasis.dissertation {
-  margin-top: 0;
-}
-
-.article {
-  color: #c24f2b;
-  text-decoration: none;
-}
-
-.article:hover {
-  color: #c24f2b;
-  text-decoration: none;
-}
-
-.name-phone-mail {
-  text-align: center;
-  color: #e1e1e1;
-}
-
-.name-phone-mail .name {
-  font-size: 15px;
-}
-
-.mail {
-  display: inline-block;
-  color: #c24f2b;
-  text-decoration: none;
-}
-
-.mail:hover {
-  display: inline-block;
-  color: #c24f2b;
-  text-decoration: none;
-}
-
-.languages {
-  margin: 10px 50px 0px 50px;
-  color: #808080;
-}
-
-p span {
-  font-style: italic;
-}
-
-.footer p {
-  color: #808080;
-  padding: 0;
-  margin: 3px 0;
-}
-
-/* Navigation bar */
-
-.navbar-pf {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  background-color: #462633;
-  z-index: 1000000;
+  height: 56.2vw;
+  max-height: 768px;
 }
 
-.nav-itm {
-  float: left;
-  display: inline;
-  color: #FFFFFF;
-  text-decoration: none;
-  width: 150px;
-  padding: 14px 0px;
-}
-
-.nav-itm:hover {
-  background-color: #F8C671;
+#intro p:nth-of-type(1) {
+  font-family: Lato-Bold;
+  font-size: 80px;
   color: #462633;
-  text-decoration: none;
+  position: absolute;
+  top: 22%;
+  left: 50%;
 }
 
-#hire {
-  float: right;
-  display: inline;
-  width: 100px;
-  padding: 4px 0px;
-  margin: 8px 10px;
-  text-decoration: none;
-  font-size: 16px;
-  background-color: #91224D;
-  color: #FFFFFF;
-  border: 1px solid #CDD0DA;
-}
-
-
-/* Small screen optimization */
-
-@media only screen and (max-width: 700px) {
-
-  .heading {
-      font-size: 20px;
-    }
-
-  .my-role {
-      font-size: 14px;
-      margin-right: 50%;
-    }
-
-  .subheading-1 {
-    font-size: 20px;
-    margin: 0 30% 30px 30%;
-  }
-
-  .subheading-2 {
-    font-size: 20px;
-    margin: 0 30% 35px 30%;
-  }
-
-  .subheading-3 {
-    font-size: 20px;
-    margin: 0 30% 30px 30%;
-  }
-
-  .subheading-4 {
-    font-size: 20px;
-    margin: 0 30% 20px 30%;
-  }
-
-  .me {
-    padding: 18% 0% 16% 15%;
-  }
-
-  .col-xs-8 .dissertation, p {
-    text-align: center;
-  }
-
-  .navbar-pf {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1a1a1a;
-  }
-
-  .nav-itm {
-    float: left;
-    display: block;
-    color: #e1e1e1;
-    text-decoration: none;
-    width: 16.5%;
-    padding: 14px 0px;
-    margin: auto;
-  }
-
-  .nav-itm:hover {
-    background-color: #e1e1e1;
-    color: #1a1a1a;
-    text-decoration: none;
-  }
-
-  #hire {
-      display: block;
-      float: right;
-      width: 10%;
-      min-width: 60px;
-      padding: 4px 0px;
-      margin: 8px 5px 8px 0px;
-      font-size: 14px;
-    }
-
-}
-
-/* Medium size optimization */
-
-@media only screen and (max-width: 1100px) and (min-width: 700px) {
-
-  .heading {
-    font-size: 35px;
-  }
-
-  .my-role {
-  font-size: 14px;
-  }
-
-  .subheading-1 {
-    font-size: 25px;
-    margin: 0 33% 45px 33%;
-  }
-
-  .subheading-2 {
-    font-size: 25px;
-    margin: 0 33% 50px 33%;
-  }
-
-  .subheading-3 {
-    font-size: 25px;
-    margin: 0 33% 45px 33%;
-  }
-
-  .subheading-4 {
-    font-size: 25px;
-    margin: 0 33% 20px 33%;
-  }
-
-  .navbar-pf {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1a1a1a;
-  }
-
-  .nav-itm {
-    float: left;
-    display: block;
-    color: #e1e1e1;
-    text-decoration: none;
-    width: 90px;
-    padding: 14px 0px;
-    margin: auto;
-  }
-
-  .nav-itm:hover {
-    background-color: #e1e1e1;
-    color: #1a1a1a;
-    text-decoration: none;
-  }
-
-  #hire {
-      display: inline-block;
-      float: right;
-      width: 10%;
-      min-width: 70px;
-      padding: 4px 0px;
-      margin: 8px 5px 8px 0px;
-      font-size: 14px;
-    }
-
-}
-
-/* Photo gallery and icons */
-
-
-.gallery {
-  border: 10px solid white;
-}
-
-.col-xs-7 {
-  padding: 1.5% 0;
-}
-
-.tribute-img {
-  padding-top: 30px;
-}
-
-.dissertation_icon {
-  padding: 0px 0px 10px 0px;
-}
-
-.media-links-2 {
-  margin-top: 30px;
-}
-
-.links {
-  max-width: 20px;
-  display: block;
-  margin: auto;
-}
-
-.logo-1 {
-  width: 6%;
-  display: inline-block;
-  float: left;
-  margin: 30px 0px 0 30px;
-  padding-right: 1%;
-}
-
-.logo-2 {
-  width: 6%;
-  display: none;
-  float: left;
-  margin: 30px 0px 0 30px;
-  padding-right: 1%;
-}
-
-.media-links-1 img {
-  width: 5%;
-  margin: 20px 0;
-  padding: 1.3%;
-  display: inline-block;
-  float: left;
+#intro p:nth-of-type(2) {
+  font-family: Lato-Regular;
+  font-size: 36px;
+  color: #462633;
+  position: absolute;
+  top: 57%;
+  left: 50%;
 }
