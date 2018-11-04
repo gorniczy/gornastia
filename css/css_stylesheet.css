@@ -53,3 +53,37 @@
   top: 4%;
   right: 3%;
 }
+
+#navbar {
+  height: 4.9vw;
+  max-height: 67px;
+  background-color: #462633;
+}
+
+#navbar div {
+  position: relative;
+  display: inline-block;
+  height: 4.9vw;
+  max-height: 67px;
+  width: 16.666vw;
+  max-width: 224.3px;
+  margin: 0;
+}
+
+#navbar a {
+  font-family: Lato-Regular;
+  font-size: 22px;
+  color: #FFFFFF;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #F8C671;
+  color: #462633;
+}
