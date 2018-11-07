@@ -138,3 +138,19 @@
 .triptychs_wall:nth-of-type(6) {
   background-image: url("../img/bck - triptychs - 2.png");
 }
+
+.stories_leaf:nth-of-type(1) {
+  background-image: url("../img/bck - stories - 1.png");
+}
+
+.stories_leaf:nth-of-type(2) {
+  background-image: url("../img/bck - stories - 2.png");
+}
+
+.stories_leaf:nth-of-type(3) {
+  background-image: url("../img/bck - stories - 3.png");
+}
+
+.stories_leaf:nth-of-type(4) {
+  background-image: url("../img/bck - stories - 2.png");
+}
