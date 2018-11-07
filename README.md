@@ -1,2 +1,2 @@
 # gornastia
-landing page for an artist
+landing page for the artist
