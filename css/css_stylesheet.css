@@ -154,3 +154,18 @@
 .stories_leaf:nth-of-type(4) {
   background-image: url("../img/bck - stories - 2.png");
 }
+
+.scenes_set:nth-of-type(1) {
+  background-image: url("../img/bck - scenes - 1.png");
+}
+
+.scenes_set:nth-of-type(2) {
+  background-image: url("../img/bck - scenes - 2.png");
+}
+
+#contact {
+  position: relative;
+  height: 27.67vw;
+  max-height: 378px;
+  background: #462633;
+}
