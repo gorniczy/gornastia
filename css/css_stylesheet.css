@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 @font-face {
   font-family: Lato-Bold;
@@ -116,7 +116,7 @@ body {
   background-image: url("../img/bck - alphabet.png");
 }
 
-#alphabet span {
+.section_name {
   display: block;
   text-align: right;
   padding: 2.708% 2.928%;
@@ -132,10 +132,13 @@ body {
   align-items: center;
   width: 94.14%;
   max-width: 1286px;
-  height: 67.44%;
-  max-height: 518px;
   margin: 0 auto;
 }
+
+.flex_container:nth-of-type(1) {
+   height: 67.44%;
+   max-height: 518px;
+ }
 
 .alphabet_img {
   width: 31.959%;
@@ -157,6 +160,41 @@ body {
 .triptychs_wall:nth-of-type(1) {
   background-image: url("../img/bck - triptychs - 1.png");
 }
+
+.flex_container:nth-of-type(2) {
+   height: 67.96%;
+   max-height: 522px;
+ }
+
+ .silhouette_img {
+   width: 28.693%;
+   max-width: 369px;
+ }
+
+ .silhouette_img:nth-of-type(1) {
+   align-self: flex-start;
+ }
+
+ .silhouette_img:nth-of-type(2) {
+   align-self: center;
+ }
+
+ .silhouette_img:nth-of-type(3) {
+   align-self: flex-end;
+ }
+
+.show_more {
+  display: block;
+  text-align: right;
+  padding: 2.562% 2.928%;
+  font-family: Lato-Regular;
+  font-size: 24px;
+  color: #452632;
+ }
+
+.show_more_first {
+  margin-top: 2.604%;
+ }
 
 .triptychs_wall:nth-of-type(2) {
   background-image: url("../img/bck - triptychs - 2.png");
