@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 @font-face {
   font-family: Lato-Bold;
@@ -135,7 +135,7 @@ body {
   margin: 0 auto;
 }
 
-.flex_container:nth-of-type(1) {
+.flex_container_alphabet {
    height: 67.44%;
    max-height: 518px;
  }
@@ -157,29 +157,33 @@ body {
   align-self: flex-start;
 }
 
+
+/* TRIPTYCH -- FIRST */
+
+
 .triptychs_wall:nth-of-type(1) {
   background-image: url("../img/bck - triptychs - 1.png");
 }
 
-.flex_container:nth-of-type(2) {
+.flex_container_tryptichs--1 {
    height: 67.96%;
    max-height: 522px;
  }
 
- .silhouette_img {
+ .triptychs_img {
    width: 28.693%;
    max-width: 369px;
  }
 
- .silhouette_img:nth-of-type(1) {
+ .triptychs_img_silhouette:nth-of-type(1) {
    align-self: flex-start;
  }
 
- .silhouette_img:nth-of-type(2) {
+ .triptychs_img_silhouette:nth-of-type(2) {
    align-self: center;
  }
 
- .silhouette_img:nth-of-type(3) {
+ .triptychs_img_silhouette:nth-of-type(3) {
    align-self: flex-end;
  }
 
@@ -196,21 +200,43 @@ body {
   margin-top: 2.604%;
  }
 
+
+ /* TRIPTYCH -- SECOND */
+
+
 .triptychs_wall:nth-of-type(2) {
   background-image: url("../img/bck - triptychs - 2.png");
 }
+
+.flex_container_tryptichs--2 {
+   height: 48.046%;
+   max-height: 369px;
+   padding: 14.461% 0;
+ }
+
+.triptychs_img_ornament {
+  align-content: center;
+}
+
+ /* TRIPTYCH -- THIRD */
 
 .triptychs_wall:nth-of-type(3) {
   background-image: url("../img/bck - triptychs - 1.png");
 }
 
+ /* TRIPTYCH -- FORTH */
+
 .triptychs_wall:nth-of-type(4) {
   background-image: url("../img/bck - triptychs - 2.png");
 }
 
+ /* TRIPTYCH -- FIFTH */
+
 .triptychs_wall:nth-of-type(5) {
   background-image: url("../img/bck - triptychs - 1.png");
 }
+
+ /* TRIPTYCH -- SIXTH */
 
 .triptychs_wall:nth-of-type(6) {
   background-image: url("../img/bck - triptychs - 2.png");
