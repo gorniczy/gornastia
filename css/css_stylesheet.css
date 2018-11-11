@@ -270,11 +270,31 @@ body {
    align-self: flex-start;
  }
 
+
  /* TRIPTYCH -- FIFTH */
+
 
 .triptychs_wall:nth-of-type(5) {
   background-image: url("../img/bck - triptychs - 1.png");
 }
+
+.flex_container_tryptichs--5 {
+   height: 61.328%;
+   max-height: 471px;
+   padding-top: 9.590%;
+ }
+
+ .triptychs_img_insect:nth-of-type(1) {
+   align-self: flex-end;
+ }
+
+ .triptychs_img_insect:nth-of-type(2) {
+   align-self: flex-start;
+ }
+
+ .triptychs_img_insect:nth-of-type(3) {
+   align-self: flex-end;
+ }
 
  /* TRIPTYCH -- SIXTH */
 
