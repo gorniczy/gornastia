@@ -218,7 +218,9 @@ body {
   align-content: center;
 }
 
+
  /* TRIPTYCH -- THIRD */
+
 
 .triptychs_wall:nth-of-type(3) {
   background-image: url("../img/bck - triptychs - 1.png");
@@ -242,11 +244,31 @@ body {
   align-self: flex-end;
 }
 
+
  /* TRIPTYCH -- FORTH */
+
 
 .triptychs_wall:nth-of-type(4) {
   background-image: url("../img/bck - triptychs - 2.png");
 }
+
+.flex_container_tryptichs--4 {
+   height: 79.947%;
+   max-height: 614px;
+   padding-top: 4.465%;
+ }
+
+ .triptychs_img_lady:nth-of-type(1) {
+   align-self: flex-end;
+ }
+
+ .triptychs_img_lady:nth-of-type(2) {
+   align-self: center;
+ }
+
+ .triptychs_img_lady:nth-of-type(3) {
+   align-self: flex-start;
+ }
 
  /* TRIPTYCH -- FIFTH */
 
