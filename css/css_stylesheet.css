@@ -385,12 +385,52 @@ body {
 }
 
 
+/* SCENES -- FIRST */
+
+
 .scenes_set:nth-of-type(1) {
   background-image: url("../img/bck - scenes - 1.png");
 }
 
+.set_caption {
+  display: block;
+  padding-top: 5.636%;
+  padding-left: 2.928%;
+  padding-bottom: 5.563%;
+  font-family: Lato-Regular;
+  font-size: 24px;
+  color: #452632;
+}
+
+.flex_container_scenes--1 {
+  height: 51.692%;
+  max-height: 397px;
+}
+
+.set_img {
+  width: 28.693%;
+  max-width: 369px;
+}
+
+.show_ml--5 {
+  padding-top: 9.5%;
+}
+
+/* SCENES -- SECOND */
+
+
 .scenes_set:nth-of-type(2) {
   background-image: url("../img/bck - scenes - 2.png");
+}
+
+.flex_container_scenes--2 {
+  height: 51.692%;
+  max-height: 397px;
+  padding-top: 12.811%;
+}
+
+.show_ml--6 {
+  padding-top: 9.5%;
 }
 
 #contact {
