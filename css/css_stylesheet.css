@@ -40,7 +40,7 @@ body {
   top: 22%;
   left: 50%;
   font-family: Lato-Bold;
-  font-size: 80px;
+  font-size: 5.856vw;
   color: #462633;
 }
 
@@ -49,7 +49,7 @@ body {
   top: 57%;
   left: 50%;
   font-family: Lato-Regular;
-  font-size: 36px;
+  font-size: 2.635vw;
   color: #462633;
 }
 
@@ -76,7 +76,7 @@ body {
   width: 16.666vw;
   max-width: 227.6px;
   font-family: Lato-Regular;
-  font-size: 22px;
+  font-size: 1.610vw;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -124,7 +124,7 @@ body {
   padding-top: 2.708%;
   padding-right: 2.928%;
   font-family: Lato-Regular;
-  font-size: 36px;
+  font-size: 2.635vw;
   color: #91224D;
 }
 
@@ -204,7 +204,7 @@ body {
   padding-right: 2.928%;
   padding-bottom: 2.562%;
   font-family: Lato-Regular;
-  font-size: 24px;
+  font-size: 1.610vw;
   color: #452632;
  }
 
@@ -344,7 +344,7 @@ body {
   padding-left: 2.928%;
   padding-bottom: 3.367%;
   font-family: Lato-Regular;
-  font-size: 24px;
+  font-size: 1.756vw;
   color: #452632;
  }
 
@@ -400,7 +400,7 @@ body {
   padding-left: 2.928%;
   padding-bottom: 5.563%;
   font-family: Lato-Regular;
-  font-size: 24px;
+  font-size: 1.756vw;
   color: #452632;
 }
 
@@ -435,6 +435,10 @@ body {
   padding-top: 9.5%;
 }
 
+
+/* CONTACT INFO */
+
+
 #contact {
   position: relative;
   height: 27.67vw;
@@ -445,7 +449,7 @@ body {
 #contact span {
   display: block;
   font-family: Lato-Regular;
-  font-size: 24px;
+  font-size: 1.756vw;
   text-align: center;
 }
 
@@ -477,4 +481,39 @@ body {
 #contact span:nth-of-type(5) {
   color: #FFFFFF;
   padding-bottom: 1.610%;
+}
+
+@media only screen and (min-width: 1367px) {
+  #intro p:nth-of-type(1) {
+    font-size: 80px;
+  }
+
+  #intro p:nth-of-type(2) {
+    font-size: 36px;
+  }
+
+  #navbar a {
+    font-size: 22px;
+  }
+
+  .section_name {
+    font-size: 36px;
+  }
+
+  .show_ml {
+    font-size: 24px;
+   }
+
+  .story_name {
+    font-size: 24px;
+   }
+
+  .set_caption {
+    font-size: 24px;
+  }
+
+  #contact span {
+    font-size: 24px;
+  }
+
 }
