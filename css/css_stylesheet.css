@@ -33,6 +33,7 @@ body {
   overflow: hidden;
   height: 56.2vw;
   max-height: 768px;
+  border-bottom: 0.1px solid #BCBCBC;
 }
 
 #intro p:nth-of-type(1) {
