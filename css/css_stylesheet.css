@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 @font-face {
   font-family: Lato-Bold;
@@ -117,12 +117,17 @@ body {
 }
 
 .section_name {
-  display: block;
-  text-align: right;
-  padding: 2.708% 2.928%;
+  display: inline-block;
+  float: right;
+  padding-top: 2.708%;
+  padding-right: 2.928%;
   font-family: Lato-Regular;
   font-size: 36px;
   color: #91224D;
+}
+
+.section_name--1 {
+  padding-bottom: 2.708%;
 }
 
 .flex_container {
@@ -163,6 +168,10 @@ body {
 
 .triptychs_wall:nth-of-type(1) {
   background-image: url("../img/bck - triptychs - 1.png");
+}
+
+.section_name--2 {
+  padding-bottom: 2.708%;
 }
 
 .flex_container_tryptichs--1 {
@@ -320,23 +329,61 @@ body {
 }
 
 
+/* STORIES -- FIRST */
 
 
 .stories_leaf:nth-of-type(1) {
   background-image: url("../img/bck - stories - 1.png");
 }
 
+.story_name {
+  display: block;
+  padding-top: 4.392%;
+  padding-left: 2.928%;
+  padding-bottom: 3.367%;
+  font-family: Lato-Regular;
+  font-size: 24px;
+  color: #452632;
+ }
+
+ .story_img {
+   width: 87.847%;
+   max-width: 1200px;
+   display: block;
+   margin: 0 auto;
+ }
+
+ .show_ml--3 {
+   margin-top: 1%;
+ }
+
+/* STORIES -- SECOND */
+
+
 .stories_leaf:nth-of-type(2) {
   background-image: url("../img/bck - stories - 2.png");
 }
+
+
+/* STORIES -- THIRD */
+
 
 .stories_leaf:nth-of-type(3) {
   background-image: url("../img/bck - stories - 3.png");
 }
 
+
+/* STORIES -- FORTH */
+
+
 .stories_leaf:nth-of-type(4) {
   background-image: url("../img/bck - stories - 2.png");
 }
+
+.show_ml--4 {
+  margin-top: 1%;
+}
+
 
 .scenes_set:nth-of-type(1) {
   background-image: url("../img/bck - scenes - 1.png");
