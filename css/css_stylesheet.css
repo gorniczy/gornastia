@@ -439,3 +439,40 @@ body {
   max-height: 378px;
   background: #462633;
 }
+
+#contact span {
+  display: block;
+  font-family: Lato-Regular;
+  font-size: 24px;
+  text-align: center;
+}
+
+#contact span:nth-of-type(1) {
+  color: #F8C671;
+  padding-top: 2.342%;
+  padding-bottom: 1.610%;
+}
+
+#contact span:nth-of-type(2) {
+  color: #F8C671;
+  padding-bottom: 1.610%;
+}
+
+#contact span:nth-of-type(3) {
+  color: #F8C671;
+}
+
+#contact span:nth-of-type(4) {
+  padding-bottom: 1.610%;
+}
+
+#contact a {
+  display: inline;
+  color: #E4844A;
+  text-decoration: none;
+}
+
+#contact span:nth-of-type(5) {
+  color: #FFFFFF;
+  padding-bottom: 1.610%;
+}
