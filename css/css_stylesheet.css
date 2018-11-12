@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 @font-face {
   font-family: Lato-Bold;
@@ -57,6 +57,8 @@ body {
   position: absolute;
   top: 4%;
   right: 3%;
+  width: 7.686%;
+  max-width: 105px;
 }
 
 #navbar {
