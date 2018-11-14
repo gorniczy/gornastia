@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 @font-face {
   font-family: Lato-Bold;
@@ -23,7 +23,6 @@ body {
 }
 
 #intro {
-  position: relative;
   background-image: url("../img/intro_background.png");
 }
 
@@ -36,30 +35,32 @@ body {
   border-bottom: 0.1px solid #BCBCBC;
 }
 
+#intro img {
+  display: inline-block;
+  float: right;
+  margin-top: 3%;
+  margin-right: 3%;
+  width: 7.686%;
+  max-width: 105px;
+}
+
 #intro p:nth-of-type(1) {
-  position: absolute;
-  top: 22%;
-  left: 50%;
+  display: inline-block;
+  margin-top: 18%;
+  margin-bottom: 0;
+  margin-left: 50%;
   font-family: Lato-Bold;
   font-size: 5.856vw;
   color: #462633;
 }
 
 #intro p:nth-of-type(2) {
-  position: absolute;
-  top: 57%;
-  left: 50%;
+  display: inline-block;
+  margin-top: 3%;
+  margin-left: 50%;
   font-family: Lato-Regular;
   font-size: 2.635vw;
   color: #462633;
-}
-
-#intro img {
-  position: absolute;
-  top: 4%;
-  right: 3%;
-  width: 7.686%;
-  max-width: 105px;
 }
 
 #navbar {
