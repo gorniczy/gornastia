@@ -3,15 +3,24 @@
   <head>
     <link href="css/css_stylesheet.css" type="text/css" rel="stylesheet">
     <script>
-
+      const pixels = ["40px", "12px", "88px", "34px"];
+      let i = 0;
+      const styleMe = setInterval(function(){
+        if(i === 4) {
+          clearInterval(styleMe);
+        }
+        document.getElementById('try').style.fontSize = pixels[i];
+        i++;
+      }, 1000);
+      window.addEventListener("load", styleMe);
     </script>
   </head>
   <body>
     <div id="content">
       <div id="intro" class="sections">
         <img src="./img/logo.png" alt="logo">
-        <p class="fontSize80">Nastia<br/>Gornichar</P>
-        <p class="fontSize36">paper artist / set designer</p>
+        <p id="try">Nastia<br/>Gornichar</P>
+        <p>paper artist / set designer</p>
       </div>
       <div id="navbar">
           <a href="#content"><span>home</span></a>
