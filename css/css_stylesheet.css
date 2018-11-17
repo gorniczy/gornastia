@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 @font-face {
   font-family: Lato-Bold;
@@ -35,6 +35,7 @@ body {
   border-bottom: 0.1px solid #BCBCBC;
 }
 
+
 #intro img {
   display: inline-block;
   float: right;
@@ -64,7 +65,9 @@ body {
 }
 
 #navbar {
-  position: relative;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   height: 4.9vw;
   max-height: 67px;
   background: #462633;
