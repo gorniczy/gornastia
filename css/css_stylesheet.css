@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 @font-face {
   font-family: Lato-Bold;
@@ -34,7 +34,6 @@ body {
   max-height: 768px;
   border-bottom: 0.1px solid #BCBCBC;
 }
-
 
 #intro img {
   display: inline-block;
