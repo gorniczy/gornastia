@@ -35,6 +35,13 @@ body {
   border-bottom: 0.1px solid #BCBCBC;
 }
 
+.target:target {
+  display: block;
+  position: relative;
+  top: -4.9vw;
+  visibility: hidden;
+}
+
 #intro img {
   display: inline-block;
   float: right;
@@ -119,7 +126,7 @@ body {
   color: #FFFFFF;
 }
 
-#alphabet {
+.alphabet_set {
   background-image: url("../img/bck - alphabet.png");
 }
 
@@ -499,6 +506,10 @@ body {
 
   #navbar a {
     font-size: 22px;
+  }
+
+  .target:target {
+    top: -67px;
   }
 
   .section_name {
