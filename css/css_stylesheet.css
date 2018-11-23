@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 @font-face {
   font-family: Lato-Bold;
@@ -42,12 +42,8 @@ body {
   visibility: hidden;
 }
 
-#hover-btn {
-  display: inline;
-}
-
 #intro img:nth-of-type(1) {
-  display: inline-block;
+  display: block;
   float: right;
   margin-top: 3%;
   margin-right: 3%;
@@ -59,10 +55,10 @@ body {
   display: inline-block;
   float: right;
   margin-top: 3%;
-  margin-right: 3%;
+  margin-right: 2.25%;
   width: 2.928%;
   max-width: 40px;
-  visibility: visible;
+  visibility: hidden;
 }
 
 #intro p:nth-of-type(1) {

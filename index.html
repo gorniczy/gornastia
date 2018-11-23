@@ -4,28 +4,49 @@
     <link href="css/css_stylesheet.css" type="text/css" rel="stylesheet">
     <link href="css/animate.css" type="text/css" rel="stylesheet">
     <script>
-      const pixels = ["12px", "40px", "78px", "5.856vw"];
-      let i = 0;
-      function animate() {
+
+      const social = ["facebook", "instagram", "behance", "etsy"];
+
+      function show() {
+        let i = 0;
         const myInterval = setInterval(function(){
         if(i === 4) {
           clearInterval(myInterval);
-        }
-        document.getElementById('try').style.fontSize = pixels[i];
+        };
+        document.getElementById(social[i]).style.visibility = "visible";
+        document.getElementById(social[i]).className = "animated bounceIn";
         i++;
-      }, 1000);
+      }, 100);
     }
+
+
+    function hide() {
+        const delay = setTimeout(function() {
+          let z = 3;
+          const myInt = setInterval(function(){
+          if(z === -1) {
+            clearInterval(myInt);
+          };
+          document.getElementById(social[z]).className = "animated bounceOut";
+          z--;
+        }, 100);
+      }, 401);
+      }
+
+
+
+
     </script>
   </head>
   <body>
     <div id="content">
       <div id="intro" class="sections">
-        <div id="hover-btn" onmouseover="animate()">
+        <div id="hover-btn" onmouseover="show()" onmouseout="hide()">
           <img src="./img/logo.png" alt="logo">
-          <img src="./img/facebook-logo.png" alt="facebook logo">
-          <img src="./img/instagram-logo.png" alt="instagram logo">
-          <img src="./img/behance-logo.png" alt="behance logo">
-          <img src="./img/etsy-logo.png" alt="etsy logo">
+          <img id="facebook" src="./img/facebook-logo.png" alt="facebook logo">
+          <img id="instagram" src="./img/instagram-logo.png" alt="instagram logo">
+          <img id="behance" src="./img/behance-logo.png" alt="behance logo">
+          <img id="etsy" src="./img/etsy-logo.png" alt="etsy logo">
         </div>
         <p id="try">Nastia<br/>Gornichar</P>
         <p>paper artist / set designer</p>
