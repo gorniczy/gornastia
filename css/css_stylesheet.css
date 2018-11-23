@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 @font-face {
   font-family: Lato-Bold;
@@ -42,7 +42,11 @@ body {
   visibility: hidden;
 }
 
-#intro img {
+#hover-btn {
+  display: inline;
+}
+
+#intro img:nth-of-type(1) {
   display: inline-block;
   float: right;
   margin-top: 3%;
@@ -51,9 +55,19 @@ body {
   max-width: 105px;
 }
 
+#intro img:nth-of-type(n + 2) {
+  display: inline-block;
+  float: right;
+  margin-top: 3%;
+  margin-right: 3%;
+  width: 2.928%;
+  max-width: 40px;
+  visibility: visible;
+}
+
 #intro p:nth-of-type(1) {
   display: inline-block;
-  margin-top: 18%;
+  margin-top: 12%;
   margin-bottom: 0;
   margin-left: 50%;
   font-family: Lato-Bold;
