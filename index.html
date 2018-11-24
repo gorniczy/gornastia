@@ -34,10 +34,8 @@
           const myInt = setInterval(function(){
           if(z === -1) {
             clearInterval(myInt);
-            flag = true;
           };
-          document.getElementById(social[z]).className = "animated bounceOut";
-          document.getElementById(social[z]).style.display = "none";
+          document.getElementById(social[z]).className = "animated zoomOut";
           z--;
         }, 100);
       }, 401);
@@ -45,18 +43,28 @@
       return;
       }
 
+      function displayNone() {
+        if(!flag) {
+          const delayTwo = setTimeout(function() {
+            for(let t = 0; t<social.length; t++) {
+              document.getElementById(social[t]).style.display = "none";
+              flag = true;
+            }
+          }, 1000);
+        }
+      }
 
     </script>
   </head>
   <body>
     <div id="content">
       <div id="intro" class="sections">
-        <div id="hover-btn" onmouseenter="show()" onmouseleave="hide()">
+        <div id="hover-btn" onmouseenter="show()" onmouseleave="hide(), displayNone()">
           <img src="./img/logo.png" alt="logo">
-          <a href="https://www.facebook.com/nastia.gornichar" target="_blank"><img id="facebook" src="./img/facebook-logo.png" alt="facebook logo"></a>
-          <a href="https://www.instagram.com/gor.na/" target="_blank"><img id="instagram" src="./img/instagram-logo.png" alt="instagram logo"></a>
-          <a href="https://www.behance.net/gornicharnastia" target="_blank"><img id="behance" src="./img/behance-logo.png" alt="behance logo"></a>
-          <a href="https://www.etsy.com/shop/NastiaPaperArt" target="_blank"><img id="etsy" src="./img/etsy-logo.png" alt="etsy logo"></a>
+          <a href="https://www.facebook.com/nastia.gornichar" target="_blank" onclick="hide(), displayNone()"><img id="facebook" src="./img/facebook-logo.png" alt="facebook logo"></a>
+          <a href="https://www.instagram.com/gor.na/" target="_blank" onclick="hide(), displayNone()"><img id="instagram" src="./img/instagram-logo.png" alt="instagram logo"></a>
+          <a href="https://www.behance.net/gornicharnastia" target="_blank" onclick="hide(), displayNone()"><img id="behance" src="./img/behance-logo.png" alt="behance logo"></a>
+          <a href="https://www.etsy.com/shop/NastiaPaperArt" target="_blank" onclick="hide(), displayNone()"><img id="etsy" src="./img/etsy-logo.png" alt="etsy logo"></a>
         </div>
         <p id="try">Nastia<br/>Gornichar</P>
         <p>paper artist / set designer</p>
