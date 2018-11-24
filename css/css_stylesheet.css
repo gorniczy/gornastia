@@ -49,14 +49,14 @@ body {
   right: 3%;
 }
 
-#intro img:nth-of-type(1) {
+#intro img {
   display: inline;
   float: right;
   width: 7.686vw;
   max-width: 105px;
 }
 
-#intro img:nth-of-type(n + 2) {
+#intro a img {
   display: none;
   float: right;
   margin-right: 2.25vw;
@@ -510,12 +510,13 @@ body {
 }
 
 @media only screen and (min-width: 1367px) {
-  #intro p:nth-of-type(1) {
-    font-size: 80px;
+
+  #intro a img  {
+    margin-right: 29px;
   }
 
-  #intro img:nth-of-type(n + 2) {
-    margin-right: 29px;
+  #intro p:nth-of-type(1) {
+    font-size: 80px;
   }
 
   #intro p:nth-of-type(2) {
