@@ -7,34 +7,41 @@
 
       const social = ["facebook", "instagram", "behance", "etsy"];
 
+      let flag = true;
+
       function show() {
-        let i = 0;
-        const myInterval = setInterval(function(){
-        if(i === 4) {
-          clearInterval(myInterval);
-        };
-        document.getElementById(social[i]).style.visibility = "visible";
-        document.getElementById(social[i]).className = "animated bounceIn";
-        i++;
-      }, 100);
+        if(flag) {
+          flag = false;
+          let i = 0;
+          const myInterval = setInterval(function(){
+          if(i === 4) {
+            clearInterval(myInterval);
+          };
+          document.getElementById(social[i]).style.display = "block";
+          document.getElementById(social[i]).className = "animated bounceIn";
+          i++;
+        }, 100);
+      }
+      return;
     }
 
-
     function hide() {
+      if(!flag) {
         const delay = setTimeout(function() {
           let z = 3;
           const myInt = setInterval(function(){
           if(z === -1) {
             clearInterval(myInt);
+            flag = true;
           };
           document.getElementById(social[z]).className = "animated bounceOut";
+          document.getElementById(social[z]).style.display = "none";
           z--;
         }, 100);
       }, 401);
       }
-
-
-
+      return;
+      }
 
     </script>
   </head>
