@@ -45,25 +45,24 @@ body {
 
 #hover-btn {
   position: absolute;
-  width: 100%;
+  top: 3%;
+  right: 3%;
 }
 
 #intro img:nth-of-type(1) {
-  display: block;
+  display: inline;
   float: right;
-  margin-top: 3%;
-  margin-right: 3%;
-  width: 7.686%;
+  width: 7.686vw;
   max-width: 105px;
 }
 
 #intro img:nth-of-type(n + 2) {
   display: none;
   float: right;
-  margin-top: 3%;
-  padding-right: 2.25%;
-  width: 2.928%;
+  margin-right: 2.25vw;
+  width: 2.928vw;
   max-width: 40px;
+  cursor: pointer;
 }
 
 #intro p:nth-of-type(1) {
@@ -513,6 +512,10 @@ body {
 @media only screen and (min-width: 1367px) {
   #intro p:nth-of-type(1) {
     font-size: 80px;
+  }
+
+  #intro img:nth-of-type(n + 2) {
+    margin-right: 29px;
   }
 
   #intro p:nth-of-type(2) {

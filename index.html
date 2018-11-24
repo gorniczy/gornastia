@@ -5,9 +5,11 @@
     <link href="css/animate.css" type="text/css" rel="stylesheet">
     <script>
 
+// animate social logo icons in the upper right corner
+
       const social = ["facebook", "instagram", "behance", "etsy"];
 
-      let flag = true;
+      let flag = true; // when true - the show() might go on
 
       function show() {
         if(flag) {
@@ -17,7 +19,7 @@
           if(i === 4) {
             clearInterval(myInterval);
           };
-          document.getElementById(social[i]).style.display = "block";
+          document.getElementById(social[i]).style.display = "inline";
           document.getElementById(social[i]).className = "animated bounceIn";
           i++;
         }, 100);
@@ -43,12 +45,13 @@
       return;
       }
 
+
     </script>
   </head>
   <body>
     <div id="content">
       <div id="intro" class="sections">
-        <div id="hover-btn" onmouseover="show()" onmouseout="hide()">
+        <div id="hover-btn" onmouseenter="show()" onmouseleave="hide()">
           <img src="./img/logo.png" alt="logo">
           <img id="facebook" src="./img/facebook-logo.png" alt="facebook logo">
           <img id="instagram" src="./img/instagram-logo.png" alt="instagram logo">
