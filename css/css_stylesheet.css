@@ -523,6 +523,21 @@ body {
   width: 100%;
 }
 
+#footer {
+  text-align: center;
+  font-family: Lato-Regular;
+  color: #808080;
+  margin-bottom: 1%;
+}
+
+#footer hr {
+  color: #DADADA;
+}
+
+#footer span a {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 1367px) {
 
   #intro a img  {
