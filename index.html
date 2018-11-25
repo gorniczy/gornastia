@@ -54,6 +54,46 @@
         }
       }
 
+// show more/less Functions
+
+  function showMoreOne() {
+    for(let a = 1; a < 6; a++) {
+      document.getElementsByClassName("triptychs_wall")[a].style.display = "block";
+    }
+      document.getElementsByClassName("show_ml--1")[0].style.display = "none";
+  }
+
+  function showLessOne() {
+    for(let a = 1; a < 6; a++) {
+      document.getElementsByClassName("triptychs_wall")[a].style.display = "none";
+      document.getElementsByClassName("show_ml--1")[0].style.display = "block";
+    }
+  }
+
+  function showMoreTwo() {
+    for(let a = 1; a < 4; a++) {
+      document.getElementsByClassName("stories_leaf")[a].style.display = "block";
+    }
+      document.getElementsByClassName("show_ml--3")[0].style.display = "none";
+  }
+
+  function showLessTwo() {
+    for(let a = 1; a < 4; a++) {
+      document.getElementsByClassName("stories_leaf")[a].style.display = "none";
+    }
+      document.getElementsByClassName("show_ml--3")[0].style.display = "inline";
+  }
+
+  function showMoreThree() {
+    document.getElementsByClassName("scenes_set")[1].style.display = "block";
+    document.getElementsByClassName("show_ml--5")[0].style.display = "none";
+  }
+
+  function showLessThree() {
+    document.getElementsByClassName("scenes_set")[1].style.display = "none";
+    document.getElementsByClassName("show_ml--5")[0].style.display = "inline";
+  }
+
     </script>
   </head>
   <body>
@@ -95,7 +135,7 @@
             <img class="triptychs_img triptychs_img_silhouette" src="./img/paper craft black 2.png" alt="second silhouette">
             <img class="triptychs_img triptychs_img_silhouette" src="./img/paper craft black 3.png" alt="third silhouette">
           </div>
-          <span class="show_ml show_ml--1">show more</span>
+          <span class="show_ml show_ml--1" onclick="showMoreOne()">show more</span>
         </div>
         <div class="triptychs_wall sections">
           <div class="flex_container flex_container_tryptichs--2">
@@ -131,7 +171,7 @@
             <img class="triptychs_img triptychs_img_nature" src="./img/paper craft nature 2.png" alt="second nature design">
             <img class="triptychs_img triptychs_img_nature" src="./img/paper craft nature 3.png" alt="third nature design">
           </div>
-          <span class="show_ml show_ml--2">show less</span>
+          <a href="#triptychs" class="show_ml show_ml--2" onclick="showLessOne()">show less</a>
         </div>
       </div>
       <div id="stories" class="target"></div>
@@ -140,7 +180,7 @@
           <span class="section_name section_name--3">stories</span>
           <span class="story_name">Stella and Stars</span>
           <img class="story_img" src="./img/stella_landscape.png" alt="Stella's story">
-          <span class="show_ml show_ml--3">show more</span>
+          <span class="show_ml show_ml--3" onclick="showMoreTwo()">show more</span>
         </div>
         <div class="stories_leaf sections">
           <span class="story_name">Sonia and Sun</span>
@@ -153,7 +193,7 @@
         <div class="stories_leaf sections">
           <span class="story_name">Teresa and Trees</span>
           <img class="story_img" src="./img/teresa_landscape.png" alt="Teresa's story">
-          <span class="show_ml show_ml--4">show less</span>
+          <a href="#stories" class="show_ml show_ml--4" onclick="showLessTwo()">show less</a>
         </div>
       </div>
       <div id="scenes" class="target"></div>
@@ -166,7 +206,7 @@
             <img class="set_img" src="./img/SOVA 2.png" alt="set design elements">
             <img class="set_img" src="./img/SOVA 3.png" alt="set design elements">
           </div>
-          <span class="show_ml show_ml--5">show more</span>
+          <span class="show_ml show_ml--5" onclick="showMoreThree()">show more</span>
         </div>
         <div class="scenes_set sections">
           <div class="flex_container flex_container_scenes--2">
@@ -174,7 +214,7 @@
             <img class="set_img" src="./img/SOVA 5.png" alt="set design elements">
             <img class="set_img" src="./img/SOVA 6.png" alt="set design elements">
           </div>
-          <span class="show_ml show_ml--6">show less</span>
+          <a href="#scenes" class="show_ml show_ml--6" onclick="showLessThree()">show less</a>
         </div>
       </div>
       <div id="contact">
@@ -192,7 +232,7 @@
       </div>
       <div id="footer">
         <hr>
-        <span>Designed and coded with passion by <a href="https://github.com/gorniczy">gorniczy</a></span>
+        <span>Designed and coded with passion by <a href="https://github.com/gorniczy" target="_blank">gorniczy</a></span>
       </div>
     </div>
   </body>

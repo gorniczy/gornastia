@@ -221,13 +221,21 @@ body {
  }
 
 .show_ml {
-  display: block;
-  text-align: right;
-  padding-right: 2.928%;
-  padding-bottom: 2.562%;
+  display: inline;
+  float: right;
+  margin-right: 2.928%;
+  margin-bottom: 2.562%;
   font-family: Lato-Regular;
   font-size: 1.610vw;
   color: #452632;
+  text-shadow: 0 1px 1px rgba(80,80,80,0.50);
+  text-decoration: none;
+  cursor: pointer;
+ }
+
+ .show_ml:hover {
+   font-size: 1.7vw;
+   text-shadow: 0 2px 2px rgba(80,80,80,0.50);
  }
 
 .show_ml--1 {
@@ -240,6 +248,7 @@ body {
 
 .triptychs_wall:nth-of-type(2) {
   background-image: url("../img/bck - triptychs - 2.png");
+  display: none;
 }
 
 .flex_container_tryptichs--2 {
@@ -258,6 +267,7 @@ body {
 
 .triptychs_wall:nth-of-type(3) {
   background-image: url("../img/bck - triptychs - 1.png");
+  display: none;
 }
 
 .flex_container_tryptichs--3 {
@@ -284,6 +294,7 @@ body {
 
 .triptychs_wall:nth-of-type(4) {
   background-image: url("../img/bck - triptychs - 2.png");
+  display: none;
 }
 
 .flex_container_tryptichs--4 {
@@ -310,6 +321,7 @@ body {
 
 .triptychs_wall:nth-of-type(5) {
   background-image: url("../img/bck - triptychs - 1.png");
+  display: none;
 }
 
 .flex_container_tryptichs--5 {
@@ -336,6 +348,7 @@ body {
 
 .triptychs_wall:nth-of-type(6) {
   background-image: url("../img/bck - triptychs - 2.png");
+    display: none;
 }
 
 .flex_container_tryptichs--6 {
@@ -386,6 +399,7 @@ body {
 
 .stories_leaf:nth-of-type(2) {
   background-image: url("../img/bck - stories - 2.png");
+  display: none;
 }
 
 
@@ -394,6 +408,7 @@ body {
 
 .stories_leaf:nth-of-type(3) {
   background-image: url("../img/bck - stories - 3.png");
+  display: none;
 }
 
 
@@ -402,6 +417,7 @@ body {
 
 .stories_leaf:nth-of-type(4) {
   background-image: url("../img/bck - stories - 2.png");
+  display: none;
 }
 
 .show_ml--4 {
@@ -437,7 +453,7 @@ body {
 }
 
 .show_ml--5 {
-  padding-top: 9.5%;
+  margin-top: 9.5%;
 }
 
 /* SCENES -- SECOND */
@@ -445,6 +461,7 @@ body {
 
 .scenes_set:nth-of-type(2) {
   background-image: url("../img/bck - scenes - 2.png");
+  display: none;
 }
 
 .flex_container_scenes--2 {
@@ -454,7 +471,7 @@ body {
 }
 
 .show_ml--6 {
-  padding-top: 9.5%;
+  margin-top: 9.5%;
 }
 
 
@@ -529,6 +546,7 @@ body {
 
 #footer hr {
   color: #DADADA;
+  width: 95%;
 }
 
 #footer span a {
@@ -564,6 +582,10 @@ body {
   .show_ml {
     font-size: 24px;
    }
+
+   .show_ml:hover {
+     font-size: 25px;
+    }
 
   .story_name {
     font-size: 24px;
