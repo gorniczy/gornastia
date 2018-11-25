@@ -466,7 +466,6 @@ body {
 
 
 #contact {
-  position: relative;
   height: 27.67vw;
   max-height: 378px;
   background: #462633;
@@ -506,7 +505,22 @@ body {
 
 #contact span:nth-of-type(5) {
   color: #FFFFFF;
-  padding-bottom: 1.610%;
+  padding-bottom: 2%;
+}
+
+#logos {
+  display: flex;
+  justify-content: center;
+}
+
+#logos a {
+  margin: 0 1.610%;
+  width: 2.3%;
+}
+
+#logos a img {
+  display: block;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1367px) {
@@ -549,6 +563,10 @@ body {
 
   #contact span {
     font-size: 24px;
+  }
+
+  #logos a {
+    margin: 0 22px;
   }
 
 }
