@@ -88,6 +88,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  display: flex;
   height: 4.9vw;
   max-height: 67px;
   background: #462633;
@@ -95,8 +96,8 @@ body {
 }
 
 #navbar a {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   height: 4.9vw;
   max-height: 67px;
   width: 16.666vw;
@@ -104,14 +105,10 @@ body {
   font-family: Lato-Regular;
   font-size: 1.610vw;
   color: #FFFFFF;
+  text-decoration: none;
   cursor: pointer;
-}
+  justify-content: center;
 
-#navbar a span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
 }
 
 #navbar a:hover {
@@ -121,10 +118,9 @@ body {
 }
 
 #navbar a:nth-of-type(6) {
-  position: absolute;
-  top: 50%;
-  right: 0.8%;
-  transform: translateY(-50%);
+  align-self: center;
+  margin-left: auto;
+  margin-right: 0.805%;
   width: 12.15vw;
   max-width: 166px;
   height: 3.8vw;
@@ -526,8 +522,9 @@ body {
 #footer {
   text-align: center;
   font-family: Lato-Regular;
+  font-size: 0.878vw;
   color: #808080;
-  margin-bottom: 1%;
+  padding-bottom: 1%;
 }
 
 #footer hr {
@@ -582,6 +579,10 @@ body {
 
   #logos a {
     margin: 0 22px;
+  }
+
+  #footer {
+    font-size: 12px;
   }
 
 }
