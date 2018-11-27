@@ -56,43 +56,68 @@
 
 // show more/less functions
 
-  function showMoreOne() {
-    for(let a = 1; a < 6; a++) {
-      document.getElementsByClassName("triptychs_wall")[a].style.display = "block";
+    function showMoreOne() {
+      for(let a = 1; a < 6; a++) {
+        document.getElementsByClassName("triptychs_wall")[a].style.display = "block";
+      }
+        document.getElementsByClassName("show_ml--1")[0].style.display = "none";
     }
-      document.getElementsByClassName("show_ml--1")[0].style.display = "none";
-  }
 
-  function showLessOne() {
-    for(let a = 1; a < 6; a++) {
-      document.getElementsByClassName("triptychs_wall")[a].style.display = "none";
-      document.getElementsByClassName("show_ml--1")[0].style.display = "block";
+    function showLessOne() {
+      for(let a = 1; a < 6; a++) {
+        document.getElementsByClassName("triptychs_wall")[a].style.display = "none";
+        document.getElementsByClassName("show_ml--1")[0].style.display = "block";
+      }
     }
-  }
 
-  function showMoreTwo() {
-    for(let a = 1; a < 4; a++) {
-      document.getElementsByClassName("stories_leaf")[a].style.display = "block";
+    function showMoreTwo() {
+      for(let a = 1; a < 4; a++) {
+        document.getElementsByClassName("stories_leaf")[a].style.display = "block";
+      }
+        document.getElementsByClassName("show_ml--3")[0].style.display = "none";
     }
-      document.getElementsByClassName("show_ml--3")[0].style.display = "none";
-  }
 
-  function showLessTwo() {
-    for(let a = 1; a < 4; a++) {
-      document.getElementsByClassName("stories_leaf")[a].style.display = "none";
+    function showLessTwo() {
+      for(let a = 1; a < 4; a++) {
+        document.getElementsByClassName("stories_leaf")[a].style.display = "none";
+      }
+        document.getElementsByClassName("show_ml--3")[0].style.display = "inline";
     }
-      document.getElementsByClassName("show_ml--3")[0].style.display = "inline";
-  }
 
-  function showMoreThree() {
-    document.getElementsByClassName("scenes_set")[1].style.display = "block";
-    document.getElementsByClassName("show_ml--5")[0].style.display = "none";
-  }
+    function showMoreThree() {
+      document.getElementsByClassName("scenes_set")[1].style.display = "block";
+      document.getElementsByClassName("show_ml--5")[0].style.display = "none";
+    }
 
-  function showLessThree() {
-    document.getElementsByClassName("scenes_set")[1].style.display = "none";
-    document.getElementsByClassName("show_ml--5")[0].style.display = "inline";
-  }
+    function showLessThree() {
+      document.getElementsByClassName("scenes_set")[1].style.display = "none";
+      document.getElementsByClassName("show_ml--5")[0].style.display = "inline";
+    }
+
+// expand mobile navbar on clicked
+
+    let flagTwo = true;
+
+    function mExpandNavbar() {
+      const navbar = document.getElementById("mobile_navbar");
+      if(flagTwo) {
+        navbar.style.height = "100vh";
+        navbar.style.maxHeight = "640px";
+        for(let i = 1; i < 7; i++) {
+          navbar.getElementsByTagName("a")[i].style.display = "flex";
+        }
+        flagTwo = false;
+      }
+      else {
+        navbar.style.height = "18.611vw";
+        navbar.style.maxHeight = "67px";
+        for(let i = 1; i < 7; i++) {
+          navbar.getElementsByTagName("a")[i].style.display = "none";
+        }
+        flagTwo = true;
+      }
+
+    }
 
     </script>
   </head>
@@ -114,7 +139,7 @@
       </div>
 <!-- mobile -->
       <div id="mobile_navbar" class="mobile">
-        <a href="#mobile_navbar"><img src="./img/menu button.png" alt="menu button"></a>
+        <a href="#mobile_navbar"><img src="./img/menu button.png" alt="menu button" onclick="mExpandNavbar()"></a>
         <a href="#content">home</a>
         <a href="#alphabet">alphabet</a>
         <a href="#triptychs">triptychs</a>
