@@ -98,7 +98,7 @@
 
     let flagTwo = true;
 
-    function mExpandNavbar() {
+    function mExpandCollapseNavbar() {
       const navbar = document.getElementById("mobile_navbar");
       if(flagTwo) {
         navbar.style.height = "100vh";
@@ -139,12 +139,12 @@
       </div>
 <!-- mobile -->
       <div id="mobile_navbar" class="mobile">
-        <a href="#mobile_navbar"><img src="./img/menu button.png" alt="menu button" onclick="mExpandNavbar()"></a>
-        <a href="#content">home</a>
-        <a href="#alphabet">alphabet</a>
-        <a href="#triptychs">triptychs</a>
-        <a href="#stories">stories</a>
-        <a href="#scenes">scenes</a>
+        <a href="#mobile_navbar"><img src="./img/menu button.png" alt="menu button" onclick="mExpandCollapseNavbar()"></a>
+        <a href="#content" onclick="mExpandCollapseNavbar()">home</a>
+        <a href="#alphabet" onclick="mExpandCollapseNavbar()">alphabet</a>
+        <a href="#triptychs" onclick="mExpandCollapseNavbar()">triptychs</a>
+        <a href="#stories" onclick="mExpandCollapseNavbar()">stories</a>
+        <a href="#scenes" onclick="mExpandCollapseNavbar()">scenes</a>
         <a href="mailto:nastiagornichar@gmail.com"><span>SAY HI!</span></a>
       </div>
 <!---->
