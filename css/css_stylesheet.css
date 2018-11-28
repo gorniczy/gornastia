@@ -595,6 +595,9 @@ body {
 
   /* TRIPTYCH -- FIRST */
 
+  .triptychs_wall{
+    flex-direction: column;
+  }
 
   .triptychs_wall:nth-of-type(1) {
     background-image: url("../img/bck - triptychs - 1.png");
@@ -628,6 +631,7 @@ body {
 
   .show_ml {
     display: inline;
+    align-self: flex-end;
     float: right;
     margin-right: 2.928%;
     margin-bottom: 2.562%;
@@ -775,6 +779,10 @@ body {
   /* STORIES -- FIRST */
 
 
+  .stories_leaf {
+    flex-direction: column;
+  }
+
   .stories_leaf:nth-of-type(1) {
     background-image: url("../img/bck - stories - 1.png");
   }
@@ -833,6 +841,10 @@ body {
 
   /* SCENES -- FIRST */
 
+
+  .scenes_set {
+    flex-direction: column;
+  }
 
   .scenes_set:nth-of-type(1) {
     background-image: url("../img/bck - scenes - 1.png");
