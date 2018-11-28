@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 @font-face {
   font-family: Lato-Bold;
@@ -43,13 +43,13 @@ body {
   }
 
   .sections {
-    background-size: 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
 /*    overflow: hidden;*/
     border-bottom: 0.1px solid #BCBCBC;
   }
 
-  .sections:nth-of-type(1) {
+  .intro_section {
     height: 159.166vw;
     max-height: 573px;
   }
@@ -176,6 +176,7 @@ body {
   .alphabet_set {
     height: 305.555vw;
     max-height: 1100px;
+    background-image: url("../img/bck - alphabet.png");
   }
 
   .flex_container {
@@ -183,7 +184,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .flex_container_alphabet {
@@ -198,12 +200,209 @@ body {
 
   .section_name {
     display: block;
-    margin-top: 5.277%;
+    padding-top: 5.277%;
     text-align: center;
     font-family: Lato-Regular;
     font-size: 6.666vw;
     color: #91224D;
   }
+
+
+  /* TRIPTYCH -- FIRST */
+
+
+  .triptychs_wall {
+    display: flex;
+    flex-direction: column;
+    height: 305.555vw;
+    max-height: 1100px;
+  }
+
+  .triptychs_wall:nth-of-type(1) {
+    background-image: url("../img/bck - triptychs - 1.png");
+  }
+
+  .flex_container_tryptichs--1 {
+    width: 80%;
+    height: 88.181%;
+    margin-top: 5.555%;
+  }
+
+  .triptychs_img {
+    width: 100%;
+  }
+
+  .show_ml {
+    display: inline;
+    align-self: center;
+    font-family: Lato-Regular;
+    font-size: 5vw;
+    color: #452632;
+    text-shadow: 0 1px 1px rgba(80,80,80,0.50);
+    text-decoration: none;
+    cursor: pointer;
+   }
+
+   .show_ml:hover {
+     font-size: 5.5vw;
+     text-shadow: 0 2px 2px rgba(80,80,80,0.50);
+   }
+
+   .show_ml--1 {
+     margin-top: 4.444%;
+   }
+
+
+  /* TRIPTYCH -- SECOND */
+
+
+  .triptychs_wall:nth-of-type(2) {
+    background-image: url("../img/bck - triptychs - 2.png");
+    /* display: none; */
+  }
+
+  .flex_container_tryptichs--2 {
+    width: 80.555%;
+    height: 86.363%;
+    padding-top: 20%;
+  }
+
+
+  /* TRIPTYCH -- THIRD */
+
+
+  .triptychs_wall:nth-of-type(3) {
+    background-image: url("../img/bck - triptychs - 1.png");
+    /* display: none; */
+  }
+
+  .flex_container_tryptichs--3 {
+    width: 80.555%;
+    height: 89.981%;
+    padding-top: 20.277%;
+  }
+
+
+  /* TRIPTYCH -- FORTH */
+
+
+  .triptychs_wall:nth-of-type(4) {
+    background-image: url("../img/bck - triptychs - 2.png");
+    /* display: none; */
+  }
+
+  .flex_container_tryptichs--4 {
+    width: 81.666%;
+    height: 84.545%;
+    padding-top: 23.055%;
+  }
+
+
+  /* TRIPTYCH -- FIFTH */
+
+
+  .triptychs_wall:nth-of-type(5) {
+    background-image: url("../img/bck - triptychs - 1.png");
+    /* display: none; */
+  }
+
+  .flex_container_tryptichs--5 {
+    width: 80.833%;
+    height: 84.545%;
+    padding-top: 23.611%;
+  }
+
+
+  /* TRIPTYCH -- SIXTH */
+
+
+  .triptychs_wall:nth-of-type(6) {
+    background-image: url("../img/bck - triptychs - 2.png");
+    /* display: none; */
+  }
+
+  .flex_container_tryptichs--6 {
+    width: 83.888%;
+    height: 86.363%;
+    padding-top: 20.833%;
+  }
+
+  .show_ml--2 {
+   margin-top: 6.944%;
+  }
+
+
+  /* STORIES - FIRST */
+
+
+  .story_img {
+    display: none;
+  }
+
+  .stories_leaf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 379.444vw;
+    max-height: 1366px;
+  }
+
+  .stories_leaf:nth-of-type(1) {
+    background-image: url("../img/bck - stories - 1.png");
+  }
+
+  .story_name {
+    display: inline;
+    margin: 15.277% auto 15.277% auto;
+    font-family: Lato-Regular;
+    font-size: 5vw;
+    color: #452632;
+  }
+
+  .story_name--1 {
+    margin: 6.944% auto 8.888% auto;
+  }
+
+ .mobile_story_img {
+   width: 91%;
+   max-width: 308px;
+   display: block;
+   margin: 0 auto;
+ }
+
+ .show_ml--3 {
+  margin-top: 10.555%;
+  }
+
+
+ /* STORIES - SECOND */
+
+
+  .stories_leaf:nth-of-type(2) {
+   background-image: url("../img/bck - stories - 2.png");
+   /*display: none;*/
+ }
+
+
+ /* STORIES - THIRD */
+
+
+ .stories_leaf:nth-of-type(3) {
+  background-image: url("../img/bck - stories - 3.png");
+  /*display: none;*/
+  }
+
+ /* STORIES - FORTH */
+
+
+ .stories_leaf:nth-of-type(4) {
+  background-image: url("../img/bck - stories - 2.png");
+  /*display: none;*/
+  }
+
+  .show_ml--4 {
+   margin-top: 10.555%;
+   }
 
 }
 
