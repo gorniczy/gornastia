@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 @font-face {
   font-family: Lato-Bold;
@@ -169,10 +169,17 @@ body {
         transition-duration: 0;
       }
 
-  .target:target {
+  .target.first:target {
     display: block;
     position: relative;
     top: -196.388vw;
+    visibility: hidden;
+  }
+
+  .target.second:target {
+    display: block;
+    position: relative;
+    top: -18.611vw;
     visibility: hidden;
   }
 
@@ -691,10 +698,17 @@ body {
         transition-duration: 0;
       }
 
-  .target:target {
+  .target.first:target {
     display: block;
     position: relative;
     top: -640px;
+    visibility: hidden;
+  }
+
+  .target.second:target {
+    display: block;
+    position: relative;
+    top: -67px;
     visibility: hidden;
   }
 
@@ -894,7 +908,7 @@ body {
 
  .mobile_story_img {
    width: 90%;
-   max-width: 350px;
+   max-width: 400px;
    display: block;
    margin: 0 auto 100px auto;
  }
