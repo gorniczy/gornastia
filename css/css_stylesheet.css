@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 
 @font-face {
   font-family: Lato-Bold;
@@ -458,6 +458,85 @@ body {
 
   .show_ml--6 {
     margin-top: 6.111%;
+  }
+
+
+  /* CONTACT INFO */
+
+
+  #contact {
+    height: 116.666vw;
+    max-height: 420px;
+    background: #462633;
+  }
+
+  #contact span {
+    display: block;
+    font-family: Lato-Light;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  #contact span:nth-of-type(1) {
+    color: #F8C671;
+    padding-top: 15.277%;
+    padding-bottom: 8.333%;
+  }
+
+  #contact span:nth-of-type(2) {
+    color: #F8C671;
+    padding-bottom: 7.777%;
+  }
+
+  #contact span:nth-of-type(3) {
+    color: #F8C671;
+  }
+
+  #contact span:nth-of-type(4) {
+    padding-bottom: 10%;
+  }
+
+  #contact a {
+    display: inline;
+    color: #E4844A;
+    text-decoration: none;
+  }
+
+  #contact span:nth-of-type(5) {
+    color: #FFFFFF;
+    padding-bottom: 12%;
+  }
+
+  #logos {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logos a {
+    margin: 0 5%;
+    width: 10%;
+  }
+
+  #logos a img {
+    display: block;
+    width: 100%;
+  }
+
+  #footer {
+    text-align: center;
+    font-family: Lato-Regular;
+    font-size: 4vw;
+    color: #808080;
+    padding-bottom: 5%;
+  }
+
+  #footer hr {
+    color: #DADADA;
+    width: 95%;
+  }
+
+  #footer span a {
+    text-decoration: none;
   }
 
 
