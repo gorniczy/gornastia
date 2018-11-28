@@ -949,7 +949,6 @@ body {
   .scenes_set {
     display: flex;
     flex-direction: column;
-    height: 1100px;
   }
 
  .scenes_set:nth-of-type(1) {
@@ -958,23 +957,24 @@ body {
 
   .set_caption {
    display: inline;
-   margin: 2.777% auto 8.055% auto;
+   margin: 20px auto;
    font-family: Lato-Regular;
    font-size: 18px;
    color: #452632;
   }
 
   .flex_container_scenes--1 {
-   width: 72.222%;
-   height: 82.727%;
+    width: 80%;
+    max-width: 350px;
   }
 
   .set_img {
    width: 100%;
+   padding-bottom: 20px;
   }
 
   .show_ml--5 {
-   margin-top: 6.111%;
+   margin-bottom: 20px;
   }
 
 
@@ -987,13 +987,13 @@ body {
   }
 
   .flex_container_scenes--2 {
-    width: 72.222%;
-    height: 86.363%;
-    padding-top: 22.222%;
+    width: 80%;
+    max-width: 350px;
+    padding-top: 80px;
   }
 
   .show_ml--6 {
-    margin-top: 6.111%;
+    margin-bottom: 20px;
   }
 
 
