@@ -60,13 +60,13 @@
       for(let a = 1; a < 6; a++) {
         document.getElementsByClassName("triptychs_wall")[a].style.display = "flex";
       }
-        document.getElementsByClassName("show_ml--1")[0].style.display = "none";
+        document.getElementsByClassName("show_ml--1")[0].style.visibility = "hidden";
     }
 
     function showLessOne() {
       for(let a = 1; a < 6; a++) {
         document.getElementsByClassName("triptychs_wall")[a].style.display = "none";
-        document.getElementsByClassName("show_ml--1")[0].style.display = "inline";
+        document.getElementsByClassName("show_ml--1")[0].style.visibility = "visible";
       }
     }
 
@@ -74,24 +74,24 @@
       for(let a = 1; a < 4; a++) {
         document.getElementsByClassName("stories_leaf")[a].style.display = "flex";
       }
-        document.getElementsByClassName("show_ml--3")[0].style.display = "none";
+        document.getElementsByClassName("show_ml--3")[0].style.visibility = "hidden";
     }
 
     function showLessTwo() {
       for(let a = 1; a < 4; a++) {
         document.getElementsByClassName("stories_leaf")[a].style.display = "none";
       }
-        document.getElementsByClassName("show_ml--3")[0].style.display = "inline";
+        document.getElementsByClassName("show_ml--3")[0].style.visibility = "visible";
     }
 
     function showMoreThree() {
       document.getElementsByClassName("scenes_set")[1].style.display = "flex";
-      document.getElementsByClassName("show_ml--5")[0].style.display = "none";
+      document.getElementsByClassName("show_ml--5")[0].style.visibility = "hidden";
     }
 
     function showLessThree() {
       document.getElementsByClassName("scenes_set")[1].style.display = "none";
-      document.getElementsByClassName("show_ml--5")[0].style.display = "inline";
+      document.getElementsByClassName("show_ml--5")[0].style.visibility = "visible";
     }
 
 // expand mobile navbar on clicked
