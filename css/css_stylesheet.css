@@ -1,6 +1,6 @@
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
 
 @font-face {
   font-family: Lato-Bold;
@@ -555,7 +555,9 @@ body {
   }
 
   #content {
-    width: 360px;
+    width: 90%;
+    min-width: 360px;
+    max-width: 720px;
     margin: 0 auto;
   }
 
@@ -571,17 +573,13 @@ body {
   .sections {
     background-size: auto 100%;
     background-repeat: no-repeat;
-/*    overflow: hidden;*/
+    overflow: hidden;
     border-bottom: 0.1px solid #BCBCBC;
-  }
-
-  .intro_section {
-    height: 573px;
   }
 
   #hover-btn {
     position: absolute;
-    top: 4.013%;
+    top: 4%;
     right: 5%;
   }
 
@@ -602,24 +600,26 @@ body {
   .mobile_intro_background {
     display: block;
     margin: 0 auto;
-    padding-top: 25.833%;
-    width: 69.166%;
+    padding-top: 93px;
+    width: 40%;
+    min-width: 249px;
+    max-width: 300px;
   }
 
   #intro p:nth-of-type(1) {
-    display: inline-block;
-    margin-top: 1%;
+    display: block;
+    margin-top: 5%;
     margin-bottom: 0;
-    margin-left: 5.833%;
+    margin-left: 10%;
     font-family: Lato-Bold;
     font-size: 48px;
     color: #462633;
   }
 
   #intro p:nth-of-type(2) {
-    display: inline-block;
-    margin-top: 4%;
-    margin-left: 5.833%;
+    display: block;
+    margin-top: 2%;
+    margin-left: 10%;
     font-family: Lato-Light;
     font-size: 24px;
     color: #462633;
@@ -645,7 +645,7 @@ body {
   }
 
   #mobile_navbar a:nth-of-type(1) {
-    margin: 4.722% auto;
+    margin: auto;
     width: 13.888%;
     max-width: 50px;
   }
@@ -702,7 +702,6 @@ body {
 
 
   .alphabet_set {
-    height: 1100px;
     background-image: url("../img/bck - alphabet.png");
   }
 
@@ -716,18 +715,20 @@ body {
   }
 
   .flex_container_alphabet {
-    width: 88.888%;
-    height: 87.909%;
-    margin-top: 5.277%;
+    width: 90%;
+    max-width: 350px;
+    margin-top: 19px;
+    margin-bottom: 42px;
   }
 
   .alphabet_img {
     width: 100%;
+    padding-bottom: 20px;
   }
 
   .section_name {
     display: block;
-    padding-top: 5.277%;
+    padding-top: 19px;
     text-align: center;
     font-family: Lato-Regular;
     font-size: 24px;
@@ -741,7 +742,6 @@ body {
   .triptychs_wall {
     display: flex;
     flex-direction: column;
-    height: 1100px;
   }
 
   .triptychs_wall:nth-of-type(1) {
@@ -750,12 +750,13 @@ body {
 
   .flex_container_tryptichs--1 {
     width: 80%;
-    height: 88.181%;
-    margin-top: 5.555%;
+    max-width: 350px;
+    margin-top: 20px;
   }
 
   .triptychs_img {
     width: 100%;
+    padding-bottom: 20px;
   }
 
   .show_ml {
@@ -775,7 +776,7 @@ body {
    }
 
    .show_ml--1 {
-     margin-top: 4.444%;
+     margin-bottom: 20px;
    }
 
 
