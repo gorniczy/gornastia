@@ -111,6 +111,7 @@ body {
     height: 18.611vw;
     max-height: 67px;
     background: #462633;
+    transition-duration: 0.3s;
   }
 
   #mobile_navbar a:nth-of-type(1) {
