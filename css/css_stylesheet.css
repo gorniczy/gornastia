@@ -392,6 +392,7 @@ body {
   /*display: none;*/
   }
 
+
  /* STORIES - FORTH */
 
 
@@ -403,6 +404,62 @@ body {
   .show_ml--4 {
    margin-top: 10.555%;
    }
+
+
+  /* SCENES - FIRST */
+
+
+  .scenes_set {
+    display: flex;
+    flex-direction: column;
+    height: 305.555vw;
+    max-height: 1100px;
+  }
+
+ .scenes_set:nth-of-type(1) {
+   background-image: url("../img/bck - scenes - 1.png");
+  }
+
+  .set_caption {
+   display: inline;
+   margin: 2.777% auto 8.055% auto;
+   font-family: Lato-Regular;
+   font-size: 5vw;
+   color: #452632;
+  }
+
+  .flex_container_scenes--1 {
+   width: 72.222%;
+   height: 82.727%;
+  }
+
+  .set_img {
+   width: 100%;
+  }
+
+  .show_ml--5 {
+   margin-top: 6.111%;
+  }
+
+
+  /* SCENES - SECOND */
+
+
+  .scenes_set:nth-of-type(2) {
+    background-image: url("../img/bck - scenes - 2.png");
+    /*display: none;*/
+  }
+
+  .flex_container_scenes--2 {
+    width: 72.222%;
+    height: 86.363%;
+    padding-top: 22.222%;
+  }
+
+  .show_ml--6 {
+    margin-top: 6.111%;
+  }
+
 
 }
 
