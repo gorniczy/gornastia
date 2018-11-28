@@ -33,6 +33,10 @@ body {
     margin: 0 auto;
   }
 
+
+  /* INTRO */
+
+
   #intro {
     position: relative;
     background-color: #CBD5DE;
@@ -98,6 +102,10 @@ body {
     color: #462633;
   }
 
+
+  /* NAVBAR */
+
+
   #navbar {
     display: none;
   }
@@ -160,6 +168,42 @@ body {
         color: #FFFFFF;
         transition-duration: 0;
       }
+
+
+  /* ALPHABET */
+
+
+  .alphabet_set {
+    height: 305.555vw;
+    max-height: 1100px;
+  }
+
+  .flex_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .flex_container_alphabet {
+    width: 88.888%;
+    height: 87.909%;
+    margin-top: 5.277%;
+  }
+
+  .alphabet_img {
+    width: 100%;
+  }
+
+  .section_name {
+    display: block;
+    margin-top: 5.277%;
+    text-align: center;
+    font-family: Lato-Regular;
+    font-size: 6.666vw;
+    color: #91224D;
+  }
 
 }
 
