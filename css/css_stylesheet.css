@@ -789,9 +789,10 @@ body {
   }
 
   .flex_container_tryptichs--2 {
-    width: 80.555%;
-    height: 86.363%;
-    padding-top: 20%;
+    width: 80%;
+    max-width: 350px;
+    padding-top: 72px;
+    margin-bottom: 52px;
   }
 
 
@@ -804,9 +805,10 @@ body {
   }
 
   .flex_container_tryptichs--3 {
-    width: 80.555%;
-    height: 89.981%;
-    padding-top: 20.277%;
+    width: 80%;
+    max-width: 350px;
+    padding-top: 72px;
+    margin-bottom: 52px;
   }
 
 
@@ -819,9 +821,10 @@ body {
   }
 
   .flex_container_tryptichs--4 {
-    width: 81.666%;
-    height: 84.545%;
-    padding-top: 23.055%;
+    width: 80%;
+    max-width: 350px;
+    padding-top: 72px;
+    margin-bottom: 52px;
   }
 
 
@@ -834,9 +837,10 @@ body {
   }
 
   .flex_container_tryptichs--5 {
-    width: 80.833%;
-    height: 84.545%;
-    padding-top: 23.611%;
+    width: 80%;
+    max-width: 350px;
+    padding-top: 72px;
+    margin-bottom: 52px;
   }
 
 
@@ -849,13 +853,13 @@ body {
   }
 
   .flex_container_tryptichs--6 {
-    width: 83.888%;
-    height: 86.363%;
-    padding-top: 20.833%;
+    width: 80%;
+    max-width: 350px;
+    padding-top: 72px;
   }
 
   .show_ml--2 {
-   margin-top: 6.944%;
+   margin-bottom: 20px;
   }
 
 
