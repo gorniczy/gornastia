@@ -1610,7 +1610,7 @@ body {
   #footer {
     text-align: center;
     font-family: Lato-Regular;
-    font-size: 0.878vw;
+    font-size: 12px;
     color: #808080;
     padding-bottom: 1%;
   }
@@ -1677,7 +1677,7 @@ body {
   }
 
   #footer {
-    font-size: 12px;
+    font-size: 14px;
   }
 
 }
