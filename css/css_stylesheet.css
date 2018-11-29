@@ -348,7 +348,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 379.444vw;
-    max-height: 1366px;
+    max-height: 1200px;
   }
 
   .stories_leaf:nth-of-type(1) {
@@ -357,14 +357,14 @@ body {
 
   .story_name {
     display: inline;
-    margin: 15.277% auto 15.277% auto;
+    margin: 10% auto 8% auto;
     font-family: Lato-Regular;
     font-size: 5vw;
     color: #452632;
   }
 
   .story_name--1 {
-    margin: 6.944% auto 8.888% auto;
+    margin: 4% auto;
   }
 
  .mobile_story_img {
@@ -375,7 +375,7 @@ body {
  }
 
  .show_ml--3 {
-  margin-top: 10.555%;
+  margin-top: 3%;
   }
 
 
@@ -406,7 +406,7 @@ body {
   }
 
   .show_ml--4 {
-   margin-top: 10.555%;
+   margin-top: 5%;
    }
 
 
@@ -878,7 +878,7 @@ body {
 
   .story_name {
     display: inline;
-    margin: 55px auto;
+    margin: 40px auto 30px auto;
     font-family: Lato-Regular;
     font-size: 18px;
     color: #452632;
@@ -892,7 +892,7 @@ body {
    width: 90%;
    max-width: 400px;
    display: block;
-   margin: 0 auto 100px auto;
+   margin: 0 auto 50px auto;
  }
 
  .mobile_story_img.first {
