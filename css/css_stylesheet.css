@@ -244,14 +244,12 @@ body {
     font-family: Lato-Regular;
     font-size: 5vw;
     color: #452632;
-    text-shadow: 0 1px 1px rgba(80,80,80,0.50);
     text-decoration: none;
     cursor: pointer;
    }
 
    .show_ml:hover {
      font-size: 5.5vw;
-     text-shadow: 0 2px 2px rgba(80,80,80,0.50);
    }
 
    .show_ml--1 {
@@ -765,14 +763,12 @@ body {
     font-family: Lato-Regular;
     font-size: 18px;
     color: #452632;
-    text-shadow: 0 1px 1px rgba(80,80,80,0.50);
     text-decoration: none;
     cursor: pointer;
    }
 
    .show_ml:hover {
      font-size: 18.5px;
-     text-shadow: 0 2px 2px rgba(80,80,80,0.50);
    }
 
    .show_ml--1 {
@@ -1297,14 +1293,12 @@ body {
     font-family: Lato-Regular;
     font-size: 1.610vw;
     color: #452632;
-    text-shadow: 0 1px 1px rgba(80,80,80,0.50);
     text-decoration: none;
     cursor: pointer;
    }
 
    .show_ml:hover {
      font-size: 1.7vw;
-     text-shadow: 0 2px 2px rgba(80,80,80,0.50);
    }
 
   .show_ml--1 {
