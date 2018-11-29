@@ -117,7 +117,12 @@
         }
         flagTwo = true;
       }
+    }
 
+// delay anchor hrefs for mobile versions
+
+    function goTo(tag) {
+      setTimeout(function() {location.href = tag;}, 301);
     }
 
     </script>
@@ -142,10 +147,10 @@
       <div id="mobile_navbar" class="mobile">
         <a href="#mobile_navbar"><img src="./img/menu button.png" alt="menu button" onclick="mExpandCollapseNavbar()"></a>
         <a href="#content" onclick="mExpandCollapseNavbar()">home</a>
-        <a href="#alphabet" onclick="mExpandCollapseNavbar()">alphabet</a>
-        <a href="#triptychs" onclick="mExpandCollapseNavbar()">triptychs</a>
-        <a href="#stories" onclick="mExpandCollapseNavbar()">stories</a>
-        <a href="#scenes" onclick="mExpandCollapseNavbar()">scenes</a>
+        <a onclick="mExpandCollapseNavbar(); goTo('#alphabet')">alphabet</a>
+        <a onclick="mExpandCollapseNavbar(); goTo('#triptychs')">triptychs</a>
+        <a onclick="mExpandCollapseNavbar(); goTo('#stories')">stories</a>
+        <a onclick="mExpandCollapseNavbar(); goTo('#scenes')">scenes</a>
         <a href="mailto:nastiagornichar@gmail.com"><span>SAY HI!</span></a>
       </div>
 <!---->
