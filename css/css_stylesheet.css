@@ -182,7 +182,7 @@ body {
   .alphabet_set {
     height: 305.555vw;
     max-height: 1100px;
-    background-image: url("../img/bck - alphabet.png");
+    background-image: url("../img/bck - alphabet - portrait.png");
   }
 
   .flex_container {
@@ -225,7 +225,7 @@ body {
   }
 
   .triptychs_wall:nth-of-type(1) {
-    background-image: url("../img/bck - triptychs - 1.png");
+    background-image: url("../img/bck - triptychs - portrait - 1.png");
   }
 
   .flex_container_tryptichs--1 {
@@ -261,7 +261,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(2) {
-    background-image: url("../img/bck - triptychs - 2.png");
+    background-image: url("../img/bck - triptychs - portrait - 2.png");
     display: none;
   }
 
@@ -276,7 +276,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(3) {
-    background-image: url("../img/bck - triptychs - 1.png");
+    background-image: url("../img/bck - triptychs - portrait - 1.png");
     display: none;
   }
 
@@ -291,7 +291,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(4) {
-    background-image: url("../img/bck - triptychs - 2.png");
+    background-image: url("../img/bck - triptychs - portrait - 2.png");
     display: none;
   }
 
@@ -306,7 +306,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(5) {
-    background-image: url("../img/bck - triptychs - 1.png");
+    background-image: url("../img/bck - triptychs - portrait - 1.png");
     display: none;
   }
 
@@ -321,7 +321,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(6) {
-    background-image: url("../img/bck - triptychs - 2.png");
+    background-image: url("../img/bck - triptychs - portrait - 2.png");
     display: none;
   }
 
@@ -352,7 +352,7 @@ body {
   }
 
   .stories_leaf:nth-of-type(1) {
-    background-image: url("../img/bck - stories - 1.png");
+    background-image: url("../img/bck - stories - portrait - 1.png");
   }
 
   .story_name {
@@ -383,7 +383,7 @@ body {
 
 
   .stories_leaf:nth-of-type(2) {
-   background-image: url("../img/bck - stories - 2.png");
+   background-image: url("../img/bck - stories - portrait - 2.png");
    display: none;
  }
 
@@ -392,7 +392,7 @@ body {
 
 
  .stories_leaf:nth-of-type(3) {
-  background-image: url("../img/bck - stories - 3.png");
+  background-image: url("../img/bck - stories - portrait - 3.png");
   display: none;
   }
 
@@ -401,7 +401,7 @@ body {
 
 
  .stories_leaf:nth-of-type(4) {
-  background-image: url("../img/bck - stories - 2.png");
+  background-image: url("../img/bck - stories - portrait - 2.png");
   display: none;
   }
 
@@ -421,7 +421,7 @@ body {
   }
 
  .scenes_set:nth-of-type(1) {
-   background-image: url("../img/bck - scenes - 1.png");
+   background-image: url("../img/bck - scenes - portrait - 1.png");
   }
 
   .set_caption {
@@ -450,7 +450,7 @@ body {
 
 
   .scenes_set:nth-of-type(2) {
-    background-image: url("../img/bck - scenes - 2.png");
+    background-image: url("../img/bck - scenes - portrait - 2.png");
     display: none;
   }
 
@@ -700,7 +700,7 @@ body {
 
 
   .alphabet_set {
-    background-image: url("../img/bck - alphabet.png");
+    background-image: url("../img/bck - alphabet - portrait.png");
   }
 
   .flex_container {
@@ -743,7 +743,7 @@ body {
   }
 
   .triptychs_wall:nth-of-type(1) {
-    background-image: url("../img/bck - triptychs - 1.png");
+    background-image: url("../img/bck - triptychs - portrait - 1.png");
   }
 
   .flex_container_tryptichs--1 {
@@ -780,7 +780,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(2) {
-    background-image: url("../img/bck - triptychs - 2.png");
+    background-image: url("../img/bck - triptychs - portrait - 2.png");
     display: none;
   }
 
@@ -796,7 +796,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(3) {
-    background-image: url("../img/bck - triptychs - 1.png");
+    background-image: url("../img/bck - triptychs - portrait - 1.png");
     display: none;
   }
 
@@ -812,7 +812,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(4) {
-    background-image: url("../img/bck - triptychs - 2.png");
+    background-image: url("../img/bck - triptychs - portrait - 2.png");
     display: none;
   }
 
@@ -828,7 +828,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(5) {
-    background-image: url("../img/bck - triptychs - 1.png");
+    background-image: url("../img/bck - triptychs - portrait - 1.png");
     display: none;
   }
 
@@ -844,7 +844,7 @@ body {
 
 
   .triptychs_wall:nth-of-type(6) {
-    background-image: url("../img/bck - triptychs - 2.png");
+    background-image: url("../img/bck - triptychs - portrait - 2.png");
     display: none;
   }
 
@@ -873,7 +873,7 @@ body {
   }
 
   .stories_leaf:nth-of-type(1) {
-    background-image: url("../img/bck - stories - 1.png");
+    background-image: url("../img/bck - stories - portrait - 1.png");
   }
 
   .story_name {
@@ -908,7 +908,7 @@ body {
 
 
   .stories_leaf:nth-of-type(2) {
-   background-image: url("../img/bck - stories - 2.png");
+   background-image: url("../img/bck - stories - portrait - 2.png");
    display: none;
  }
 
@@ -917,7 +917,7 @@ body {
 
 
  .stories_leaf:nth-of-type(3) {
-  background-image: url("../img/bck - stories - 3.png");
+  background-image: url("../img/bck - stories - portrait - 3.png");
   display: none;
   }
 
@@ -926,7 +926,7 @@ body {
 
 
  .stories_leaf:nth-of-type(4) {
-  background-image: url("../img/bck - stories - 2.png");
+  background-image: url("../img/bck - stories - portrait - 2.png");
   display: none;
   }
 
@@ -948,7 +948,7 @@ body {
   }
 
  .scenes_set:nth-of-type(1) {
-   background-image: url("../img/bck - scenes - 1.png");
+   background-image: url("../img/bck - scenes - portrait - 1.png");
   }
 
   .set_caption {
@@ -978,7 +978,7 @@ body {
 
 
   .scenes_set:nth-of-type(2) {
-    background-image: url("../img/bck - scenes - 2.png");
+    background-image: url("../img/bck - scenes - portrait - 2.png");
     display: none;
   }
 
