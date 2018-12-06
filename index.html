@@ -11,11 +11,11 @@
 
       const social = ["facebook", "instagram", "behance", "etsy"];
 
-      let flag = true; // when true - the show() might go on
+      let animationCanStart = true; // when true - the show() might go on
 
       function show() {
-        if(flag) {
-          flag = false;
+        if(animationCanStart) {
+          animationCanStart = false;
           let i = 0;
           const myInterval = setInterval(function(){
           if(i === 4) {
@@ -30,7 +30,7 @@
     }
 
     function hide() {
-      if(!flag) {
+      if(!animationCanStart) {
         const delay = setTimeout(function() {
           let z = 3;
           const myInt = setInterval(function(){
@@ -46,11 +46,11 @@
       }
 
       function displayNone() {
-        if(!flag) {
+        if(!animationCanStart) {
           const delayTwo = setTimeout(function() {
             for(let t = 0; t<social.length; t++) {
               document.getElementById(social[t]).style.display = "none";
-              flag = true;
+              animationCanStart = true;
             }
           }, 1000);
         }
