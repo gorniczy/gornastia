@@ -1,2 +1,1 @@
-# gornastia
-landing page for the paper artist
+The main idea behind the project is giving a promise. It's designed to provide viewers with the experience closest to the one they would have with the product before they know they might like to pursue it. It aims to construct balance between the fulfilling satisfaction of a spectator and unfulfilled urge of getting to the source, i.e. contacting the artist, placing an order etc. In other words, it's meant to combine the 'feel good' and 'want more' aspects of a successful landing page.
