@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nastia Gornichar</title>
-    <link href="css/css_stylesheet.css" type="text/css" rel="stylesheet">
-    <link href="css/animate.css" type="text/css" rel="stylesheet">
-    <script>
 
-// animate social logo icons in the upper right corner
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nastia Gornichar</title>
 
-      const social = ["facebook", "instagram", "behance", "etsy"];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
-      let animationCanStart = true; // when true - the show() might go on
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132054959-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      function show() {
-        if(animationCanStart) {
-          animationCanStart = false;
-          let i = 0;
-          const myInterval = setInterval(function(){
-          if(i === 4) {
+  gtag('config', 'UA-132054959-4');
+  </script>
+  <link href="css/css_stylesheet.css" type="text/css" rel="stylesheet">
+  <link href="css/animate.css" type="text/css" rel="stylesheet">
+  <script>
+    // animate social logo icons in the upper right corner
+
+    const social = ["facebook", "instagram", "behance", "etsy"];
+
+    let animationCanStart = true; // when true - the show() might go on
+
+    function show() {
+      if (animationCanStart) {
+        animationCanStart = false;
+        let i = 0;
+        const myInterval = setInterval(function() {
+          if (i === 4) {
             clearInterval(myInterval);
           };
           document.getElementById(social[i]).style.display = "inline";
@@ -30,60 +41,60 @@
     }
 
     function hide() {
-      if(!animationCanStart) {
+      if (!animationCanStart) {
         const delay = setTimeout(function() {
           let z = 3;
-          const myInt = setInterval(function(){
-          if(z === -1) {
-            clearInterval(myInt);
-          };
-          document.getElementById(social[z]).className = "animated zoomOut";
-          z--;
-        }, 100);
-      }, 401);
+          const myInt = setInterval(function() {
+            if (z === -1) {
+              clearInterval(myInt);
+            };
+            document.getElementById(social[z]).className = "animated zoomOut";
+            z--;
+          }, 100);
+        }, 401);
       }
       return;
-      }
+    }
 
-      function displayNone() {
-        if(!animationCanStart) {
-          const delayTwo = setTimeout(function() {
-            for(let t = 0; t<social.length; t++) {
-              document.getElementById(social[t]).style.display = "none";
-              animationCanStart = true;
-            }
-          }, 1000);
-        }
+    function displayNone() {
+      if (!animationCanStart) {
+        const delayTwo = setTimeout(function() {
+          for (let t = 0; t < social.length; t++) {
+            document.getElementById(social[t]).style.display = "none";
+            animationCanStart = true;
+          }
+        }, 1000);
       }
+    }
 
-// show more/less functions
+    // show more/less functions
 
     function showMoreOne() {
-      for(let a = 1; a < 6; a++) {
+      for (let a = 1; a < 6; a++) {
         document.getElementsByClassName("triptychs_wall")[a].style.display = "flex";
       }
-        document.getElementsByClassName("show_ml--1")[0].style.visibility = "hidden";
+      document.getElementsByClassName("show_ml--1")[0].style.visibility = "hidden";
     }
 
     function showLessOne() {
-      for(let a = 1; a < 6; a++) {
+      for (let a = 1; a < 6; a++) {
         document.getElementsByClassName("triptychs_wall")[a].style.display = "none";
         document.getElementsByClassName("show_ml--1")[0].style.visibility = "visible";
       }
     }
 
     function showMoreTwo() {
-      for(let a = 1; a < 4; a++) {
+      for (let a = 1; a < 4; a++) {
         document.getElementsByClassName("stories_leaf")[a].style.display = "flex";
       }
-        document.getElementsByClassName("show_ml--3")[0].style.visibility = "hidden";
+      document.getElementsByClassName("show_ml--3")[0].style.visibility = "hidden";
     }
 
     function showLessTwo() {
-      for(let a = 1; a < 4; a++) {
+      for (let a = 1; a < 4; a++) {
         document.getElementsByClassName("stories_leaf")[a].style.display = "none";
       }
-        document.getElementsByClassName("show_ml--3")[0].style.visibility = "visible";
+      document.getElementsByClassName("show_ml--3")[0].style.visibility = "visible";
     }
 
     function showMoreThree() {
@@ -96,204 +107,207 @@
       document.getElementsByClassName("show_ml--5")[0].style.visibility = "visible";
     }
 
-// expand mobile navbar on click
+    // expand mobile navbar on click
 
     let flagTwo = true;
 
     function mExpandCollapseNavbar() {
       const navbar = document.getElementById("mobile_navbar");
-      if(flagTwo) {
+      if (flagTwo) {
         navbar.style.height = "100vh";
         navbar.style.maxHeight = "640px";
-        for(let i = 1; i < 7; i++) {
+        for (let i = 1; i < 7; i++) {
           navbar.getElementsByTagName("a")[i].style.display = "flex";
         }
         flagTwo = false;
-      }
-      else {
+      } else {
         navbar.style.height = "18.611vw";
         navbar.style.maxHeight = "67px";
-        for(let i = 1; i < 7; i++) {
+        for (let i = 1; i < 7; i++) {
           navbar.getElementsByTagName("a")[i].style.display = "none";
         }
         flagTwo = true;
       }
     }
 
-// delay anchor hrefs for mobile versions
+    // delay anchor hrefs for mobile versions
 
     function goTo(tag) {
-      setTimeout(function() {location.href = tag;}, 301);
+      setTimeout(function() {
+        location.href = tag;
+      }, 301);
     }
+  </script>
+</head>
 
-    </script>
-  </head>
-  <body>
-    <div id="content">
-      <div id="intro" class="intro_section sections">
-        <div id="hover-btn" onmouseenter="show()" onmouseleave="hide(); displayNone()">
-          <img src="./img/logo.png" alt="logo">
-          <a href="https://www.facebook.com/nastia.gornichar" target="_blank" onclick="hide(); displayNone()"><img id="facebook" src="./img/facebook-logo.png" alt="facebook logo"></a>
-          <a href="https://www.instagram.com/gor.na/" target="_blank" onclick="hide(); displayNone()"><img id="instagram" src="./img/instagram-logo.png" alt="instagram logo"></a>
-          <a href="https://www.behance.net/gornicharnastia" target="_blank" onclick="hide(); displayNone()"><img id="behance" src="./img/behance-logo.png" alt="behance logo"></a>
-          <a href="https://www.etsy.com/shop/NastiaPaperArt" target="_blank" onclick="hide(); displayNone()"><img id="etsy" src="./img/etsy-logo.png" alt="etsy logo"></a>
-        </div>
-<!-- mobile -->
-        <img class="mobile mobile_intro_background" src="./img/m_intro_background.png" alt="letter A design">
-<!---->
-        <p id="try">Nastia<br/>Gornichar</P>
-        <p>paper artist / set designer</p>
+<body>
+  <div id="content">
+    <div id="intro" class="intro_section sections">
+      <div id="hover-btn" onmouseenter="show()" onmouseleave="hide(); displayNone()">
+        <img src="./img/logo.png" alt="logo">
+        <a href="https://www.facebook.com/nastia.gornichar" target="_blank" onclick="hide(); displayNone()"><img id="facebook" src="./img/facebook-logo.png" alt="facebook logo"></a>
+        <a href="https://www.instagram.com/gor.na/" target="_blank" onclick="hide(); displayNone()"><img id="instagram" src="./img/instagram-logo.png" alt="instagram logo"></a>
+        <a href="https://www.behance.net/gornicharnastia" target="_blank" onclick="hide(); displayNone()"><img id="behance" src="./img/behance-logo.png" alt="behance logo"></a>
+        <a href="https://www.etsy.com/shop/NastiaPaperArt" target="_blank" onclick="hide(); displayNone()"><img id="etsy" src="./img/etsy-logo.png" alt="etsy logo"></a>
       </div>
-<!-- mobile -->
-      <div id="mobile_navbar" class="mobile">
-        <a href="#mobile_navbar"><img src="./img/menu button.png" alt="menu button" onclick="mExpandCollapseNavbar()"></a>
-        <a href="#content" onclick="mExpandCollapseNavbar()">home</a>
-        <a onclick="mExpandCollapseNavbar(); goTo('#alphabet')">alphabet</a>
-        <a onclick="mExpandCollapseNavbar(); goTo('#triptychs')">triptychs</a>
-        <a onclick="mExpandCollapseNavbar(); goTo('#stories')">stories</a>
-        <a onclick="mExpandCollapseNavbar(); goTo('#scenes')">scenes</a>
-        <a href="mailto:nastiagornichar@gmail.com"><span>SAY HI!</span></a>
-      </div>
-<!---->
-      <div id="navbar">
-          <a href="#content">home</a>
-          <a href="#alphabet">alphabet</a>
-          <a href="#triptychs">triptychs</a>
-          <a href="#stories">stories</a>
-          <a href="#scenes">scenes</a>
-          <a href="mailto:nastiagornichar@gmail.com"><span>SAY HI!</span></a>
-      </div>
-      <div id="alphabet" class="target"></div>
-      <div class="alphabet_set sections">
-        <span class="section_name section_name--1">&#8213; alphabet &#8213;</span>
-        <div class="flex_container flex_container_alphabet">
-          <img class="alphabet_img" src="./img/paper alphabet S.png" alt="letter S design">
-          <img class="alphabet_img" src="./img/paper alphabet B.png" alt="letter B design">
-          <img class="alphabet_img" src="./img/paper alphabet A.png" alt="letter A design">
-        </div>
-      </div>
-      <div id="triptychs" class="target"></div>
-      <div>
-        <div class="triptychs_wall sections">
-          <span class="section_name section_name--2">&#8213; triptychs &#8213;</span>
-          <div class="flex_container flex_container_tryptichs--1">
-            <img class="triptychs_img triptychs_img_silhouette" src="./img/paper craft black 1.png" alt="first silhouette">
-            <img class="triptychs_img triptychs_img_silhouette" src="./img/paper craft black 2.png" alt="second silhouette">
-            <img class="triptychs_img triptychs_img_silhouette" src="./img/paper craft black 3.png" alt="third silhouette">
-          </div>
-          <span class="show_ml show_ml--1" onclick="showMoreOne()">&#8249; show more &#8250;</span>
-        </div>
-        <div class="triptychs_wall sections">
-          <div class="flex_container flex_container_tryptichs--2">
-            <img class="triptychs_img triptychs_img_ornament" src="./img/paper craft ethno1.png" alt="first ornament">
-            <img class="triptychs_img triptychs_img_ornament" src="./img/paper craft ethno2.png" alt="second ornament">
-            <img class="triptychs_img triptychs_img_ornament" src="./img/paper craft ethno3.png" alt="third ornament">
-          </div>
-        </div>
-        <div class="triptychs_wall sections">
-          <div class="flex_container flex_container_tryptichs--3">
-            <img class="triptychs_img triptychs_img_portrait" src="./img/paper craft face1.png" alt="first portrait">
-            <img class="triptychs_img triptychs_img_portrait" src="./img/paper craft face2.png" alt="second portrait">
-            <img class="triptychs_img triptychs_img_portrait" src="./img/paper craft face3.png" alt="third portrait">
-          </div>
-        </div>
-        <div class="triptychs_wall sections">
-          <div class="flex_container flex_container_tryptichs--4">
-            <img class="triptychs_img triptychs_img_lady" src="./img/paper craft girl1.png" alt="first lady">
-            <img class="triptychs_img triptychs_img_lady" src="./img/paper craft girl2.png" alt="second lady">
-            <img class="triptychs_img triptychs_img_lady" src="./img/paper craft girl3.png" alt="third lady">
-          </div>
-        </div>
-        <div class="triptychs_wall sections">
-          <div class="flex_container flex_container_tryptichs--5">
-            <img class="triptychs_img triptychs_img_insect" src="./img/paper craft insect1.png" alt="first insect">
-            <img class="triptychs_img triptychs_img_insect" src="./img/paper craft insect2.png" alt="second insect">
-            <img class="triptychs_img triptychs_img_insect" src="./img/paper craft insect3.png" alt="third insect">
-          </div>
-        </div>
-        <div class="triptychs_wall sections">
-          <div class="flex_container flex_container_tryptichs--6">
-            <img class="triptychs_img triptychs_img_nature" src="./img/paper craft nature 1.png" alt="first nature design">
-            <img class="triptychs_img triptychs_img_nature" src="./img/paper craft nature 2.png" alt="second nature design">
-            <img class="triptychs_img triptychs_img_nature" src="./img/paper craft nature 3.png" alt="third nature design">
-          </div>
-          <a href="#triptychs" class="show_ml show_ml--2" onclick="showLessOne()">&#8249; show less &#8250;</a>
-        </div>
-      </div>
-      <div id="stories" class="target"></div>
-      <div>
-        <div class="stories_leaf sections">
-          <span class="section_name section_name--3">&#8213; stories &#8213;</span>
-          <span class="story_name story_name--1">&#10075; Stella and Stars &#10076;</span>
-<!-- mobile -->
-          <img class="mobile mobile_story_img first" src="./img/stella_portrait.png" alt="Stella's story">
-<!---->
-          <img class="story_img" src="./img/stella_landscape.png" alt="Stella's story">
-          <span class="show_ml show_ml--3" onclick="showMoreTwo()">&#8249; show more &#8250;</span>
-        </div>
-        <div class="stories_leaf sections">
-          <span class="story_name">&#10075; Sonia and Sun &#10076;</span>
-<!-- mobile -->
-          <img class="mobile mobile_story_img" src="./img/sonia_portrait.png" alt="Sonia's story">
-<!---->
-          <img class="story_img" src="./img/sonia_landscape.png" alt="Sonia's story">
-        </div>
-        <div class="stories_leaf sections">
-          <span class="story_name">&#10075; Sean and Ocean &#10076;</span>
-<!-- mobile -->
-          <img class="mobile mobile_story_img" src="./img/sean_portrait.png" alt="Sean's story">
-<!---->
-          <img class="story_img" src="./img/sean_landscape.png" alt="Sean's story">
-        </div>
-        <div class="stories_leaf sections">
-          <span class="story_name">&#10075; Teresa and Trees &#10076;</span>
-<!-- mobile -->
-          <img class="mobile mobile_story_img last" src="./img/teresa_portrait.png" alt="Teresa's story">
-<!---->
-          <img class="story_img" src="./img/teresa_landscape.png" alt="Teresa's story">
-          <a href="#stories" class="show_ml show_ml--4" onclick="showLessTwo()">&#8249; show less &#8250;</a>
-        </div>
-      </div>
-      <div id="scenes" class="target"></div>
-      <div>
-        <div class="scenes_set sections">
-          <span class="section_name section_name--4">&#8213; scenes &#8213;</span>
-          <span class="set_caption">Set design for SOVA jewerly</span>
-          <div class="flex_container flex_container_scenes--1">
-            <img class="set_img" src="./img/SOVA 1.png" alt="set design elements">
-            <img class="set_img" src="./img/SOVA 2.png" alt="set design elements">
-            <img class="set_img" src="./img/SOVA 3.png" alt="set design elements">
-          </div>
-          <span class="show_ml show_ml--5" onclick="showMoreThree()">&#8249; show more &#8250;</span>
-        </div>
-        <div class="scenes_set sections">
-          <div class="flex_container flex_container_scenes--2">
-            <img class="set_img" src="./img/SOVA 4.png" alt="set design elements">
-            <img class="set_img" src="./img/SOVA 5.png" alt="set design elements">
-            <img class="set_img" src="./img/SOVA 6.png" alt="set design elements">
-          </div>
-          <a href="#scenes" class="show_ml show_ml--6" onclick="showLessThree()">&#8249; show less &#8250;</a>
-        </div>
-      </div>
-      <div id="contact">
-        <span>Now that you know what I do, let's talk<br>and find out what's in it for you.</span>
-        <span>Nastia Gornichar</span>
-        <span>+38 675 456 586</span>
-        <span><a href="mailto:nastiagornichar@gmail.com">nastiagornichar@gmail.com</a></span>
-        <span>Come say hi!</span>
-        <div id="logos">
-          <a href="https://www.facebook.com/nastia.gornichar" target="_blank"><img src="./img/facebook-logo2.png" alt="facebook logo"></a>
-          <a href="https://www.instagram.com/gor.na/" target="_blank"><img src="./img/instagram-logo2.png" alt="instagram logo"></a>
-          <a href="https://www.behance.net/gornicharnastia" target="_blank"><img src="./img/behance-logo2.png" alt="behance logo"></a>
-          <a href="https://www.etsy.com/shop/NastiaPaperArt" target="_blank"><img src="./img/etsy-logo2.png" alt="etsy logo"></a>
-        </div>
-      </div>
-      <div id="footer">
-        <hr>
-        <span>Designed and coded with &#10084; by <a href="https://github.com/gorniczy" target="_blank">gorniczy</a> .</span>
-        <br/>
-        <span>Social media icons made by  <a href="https://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> and <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="www.flaticon.com" target="_blank">flaticon</a> .</span>
+      <!-- mobile -->
+      <img class="mobile mobile_intro_background" src="./img/m_intro_background.png" alt="letter A design">
+      <!---->
+      <p id="try">Nastia<br />Gornichar</P>
+      <p>paper artist / set designer</p>
+    </div>
+    <!-- mobile -->
+    <div id="mobile_navbar" class="mobile">
+      <a href="#mobile_navbar"><img src="./img/menu button.png" alt="menu button" onclick="mExpandCollapseNavbar()"></a>
+      <a href="#content" onclick="mExpandCollapseNavbar()">home</a>
+      <a onclick="mExpandCollapseNavbar(); goTo('#alphabet')">alphabet</a>
+      <a onclick="mExpandCollapseNavbar(); goTo('#triptychs')">triptychs</a>
+      <a onclick="mExpandCollapseNavbar(); goTo('#stories')">stories</a>
+      <a onclick="mExpandCollapseNavbar(); goTo('#scenes')">scenes</a>
+      <a href="mailto:nastiagornichar@gmail.com"><span>SAY HI!</span></a>
+    </div>
+    <!---->
+    <div id="navbar">
+      <a href="#content">home</a>
+      <a href="#alphabet">alphabet</a>
+      <a href="#triptychs">triptychs</a>
+      <a href="#stories">stories</a>
+      <a href="#scenes">scenes</a>
+      <a href="mailto:nastiagornichar@gmail.com"><span>SAY HI!</span></a>
+    </div>
+    <div id="alphabet" class="target"></div>
+    <div class="alphabet_set sections">
+      <span class="section_name section_name--1">&#8213; alphabet &#8213;</span>
+      <div class="flex_container flex_container_alphabet">
+        <img class="alphabet_img" src="./img/paper alphabet S.png" alt="letter S design">
+        <img class="alphabet_img" src="./img/paper alphabet B.png" alt="letter B design">
+        <img class="alphabet_img" src="./img/paper alphabet A.png" alt="letter A design">
       </div>
     </div>
-  </body>
+    <div id="triptychs" class="target"></div>
+    <div>
+      <div class="triptychs_wall sections">
+        <span class="section_name section_name--2">&#8213; triptychs &#8213;</span>
+        <div class="flex_container flex_container_tryptichs--1">
+          <img class="triptychs_img triptychs_img_silhouette" src="./img/paper craft black 1.png" alt="first silhouette">
+          <img class="triptychs_img triptychs_img_silhouette" src="./img/paper craft black 2.png" alt="second silhouette">
+          <img class="triptychs_img triptychs_img_silhouette" src="./img/paper craft black 3.png" alt="third silhouette">
+        </div>
+        <span class="show_ml show_ml--1" onclick="showMoreOne()">&#8249; show more &#8250;</span>
+      </div>
+      <div class="triptychs_wall sections">
+        <div class="flex_container flex_container_tryptichs--2">
+          <img class="triptychs_img triptychs_img_ornament" src="./img/paper craft ethno1.png" alt="first ornament">
+          <img class="triptychs_img triptychs_img_ornament" src="./img/paper craft ethno2.png" alt="second ornament">
+          <img class="triptychs_img triptychs_img_ornament" src="./img/paper craft ethno3.png" alt="third ornament">
+        </div>
+      </div>
+      <div class="triptychs_wall sections">
+        <div class="flex_container flex_container_tryptichs--3">
+          <img class="triptychs_img triptychs_img_portrait" src="./img/paper craft face1.png" alt="first portrait">
+          <img class="triptychs_img triptychs_img_portrait" src="./img/paper craft face2.png" alt="second portrait">
+          <img class="triptychs_img triptychs_img_portrait" src="./img/paper craft face3.png" alt="third portrait">
+        </div>
+      </div>
+      <div class="triptychs_wall sections">
+        <div class="flex_container flex_container_tryptichs--4">
+          <img class="triptychs_img triptychs_img_lady" src="./img/paper craft girl1.png" alt="first lady">
+          <img class="triptychs_img triptychs_img_lady" src="./img/paper craft girl2.png" alt="second lady">
+          <img class="triptychs_img triptychs_img_lady" src="./img/paper craft girl3.png" alt="third lady">
+        </div>
+      </div>
+      <div class="triptychs_wall sections">
+        <div class="flex_container flex_container_tryptichs--5">
+          <img class="triptychs_img triptychs_img_insect" src="./img/paper craft insect1.png" alt="first insect">
+          <img class="triptychs_img triptychs_img_insect" src="./img/paper craft insect2.png" alt="second insect">
+          <img class="triptychs_img triptychs_img_insect" src="./img/paper craft insect3.png" alt="third insect">
+        </div>
+      </div>
+      <div class="triptychs_wall sections">
+        <div class="flex_container flex_container_tryptichs--6">
+          <img class="triptychs_img triptychs_img_nature" src="./img/paper craft nature 1.png" alt="first nature design">
+          <img class="triptychs_img triptychs_img_nature" src="./img/paper craft nature 2.png" alt="second nature design">
+          <img class="triptychs_img triptychs_img_nature" src="./img/paper craft nature 3.png" alt="third nature design">
+        </div>
+        <a href="#triptychs" class="show_ml show_ml--2" onclick="showLessOne()">&#8249; show less &#8250;</a>
+      </div>
+    </div>
+    <div id="stories" class="target"></div>
+    <div>
+      <div class="stories_leaf sections">
+        <span class="section_name section_name--3">&#8213; stories &#8213;</span>
+        <span class="story_name story_name--1">&#10075; Stella and Stars &#10076;</span>
+        <!-- mobile -->
+        <img class="mobile mobile_story_img first" src="./img/stella_portrait.png" alt="Stella's story">
+        <!---->
+        <img class="story_img" src="./img/stella_landscape.png" alt="Stella's story">
+        <span class="show_ml show_ml--3" onclick="showMoreTwo()">&#8249; show more &#8250;</span>
+      </div>
+      <div class="stories_leaf sections">
+        <span class="story_name">&#10075; Sonia and Sun &#10076;</span>
+        <!-- mobile -->
+        <img class="mobile mobile_story_img" src="./img/sonia_portrait.png" alt="Sonia's story">
+        <!---->
+        <img class="story_img" src="./img/sonia_landscape.png" alt="Sonia's story">
+      </div>
+      <div class="stories_leaf sections">
+        <span class="story_name">&#10075; Sean and Ocean &#10076;</span>
+        <!-- mobile -->
+        <img class="mobile mobile_story_img" src="./img/sean_portrait.png" alt="Sean's story">
+        <!---->
+        <img class="story_img" src="./img/sean_landscape.png" alt="Sean's story">
+      </div>
+      <div class="stories_leaf sections">
+        <span class="story_name">&#10075; Teresa and Trees &#10076;</span>
+        <!-- mobile -->
+        <img class="mobile mobile_story_img last" src="./img/teresa_portrait.png" alt="Teresa's story">
+        <!---->
+        <img class="story_img" src="./img/teresa_landscape.png" alt="Teresa's story">
+        <a href="#stories" class="show_ml show_ml--4" onclick="showLessTwo()">&#8249; show less &#8250;</a>
+      </div>
+    </div>
+    <div id="scenes" class="target"></div>
+    <div>
+      <div class="scenes_set sections">
+        <span class="section_name section_name--4">&#8213; scenes &#8213;</span>
+        <span class="set_caption">Set design for SOVA jewerly</span>
+        <div class="flex_container flex_container_scenes--1">
+          <img class="set_img" src="./img/SOVA 1.png" alt="set design elements">
+          <img class="set_img" src="./img/SOVA 2.png" alt="set design elements">
+          <img class="set_img" src="./img/SOVA 3.png" alt="set design elements">
+        </div>
+        <span class="show_ml show_ml--5" onclick="showMoreThree()">&#8249; show more &#8250;</span>
+      </div>
+      <div class="scenes_set sections">
+        <div class="flex_container flex_container_scenes--2">
+          <img class="set_img" src="./img/SOVA 4.png" alt="set design elements">
+          <img class="set_img" src="./img/SOVA 5.png" alt="set design elements">
+          <img class="set_img" src="./img/SOVA 6.png" alt="set design elements">
+        </div>
+        <a href="#scenes" class="show_ml show_ml--6" onclick="showLessThree()">&#8249; show less &#8250;</a>
+      </div>
+    </div>
+    <div id="contact">
+      <span>Now that you know what I do, let's talk<br>and find out what's in it for you.</span>
+      <span>Nastia Gornichar</span>
+      <span>+38 675 456 586</span>
+      <span><a href="mailto:nastiagornichar@gmail.com">nastiagornichar@gmail.com</a></span>
+      <span>Come say hi!</span>
+      <div id="logos">
+        <a href="https://www.facebook.com/nastia.gornichar" target="_blank"><img src="./img/facebook-logo2.png" alt="facebook logo"></a>
+        <a href="https://www.instagram.com/gor.na/" target="_blank"><img src="./img/instagram-logo2.png" alt="instagram logo"></a>
+        <a href="https://www.behance.net/gornicharnastia" target="_blank"><img src="./img/behance-logo2.png" alt="behance logo"></a>
+        <a href="https://www.etsy.com/shop/NastiaPaperArt" target="_blank"><img src="./img/etsy-logo2.png" alt="etsy logo"></a>
+      </div>
+    </div>
+    <div id="footer">
+      <hr>
+      <span>Designed and coded with &#10084; by <a href="https://github.com/gorniczy" target="_blank">gorniczy</a> .</span>
+      <br />
+      <span>Social media icons made by <a href="https://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> and <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="www.flaticon.com" target="_blank">flaticon</a>
+        .</span>
+    </div>
+  </div>
+</body>
+
 </html>
